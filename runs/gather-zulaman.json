@@ -1,0 +1,1058 @@
+{
+ "order": 21,
+ "name": "Gather: Zul'Aman",
+ "mode": "gather",
+ "about": "A herb and ore loop in Zul'Aman, centred on its richest spawn points at today's prices (49 Umbral Tin, 35 Azeroot, 34 Tranquility Bloom, 20 Argentleaf, 5 Brilliant Silver, 5 Refulgent Copper, 2 Umbral Tin Seam). Cheap herbs aren't steered for; pick them as you pass. Spawn points from GatherMate2_Data, so some will be empty. The arrow moves on as you pass each spot.",
+ "steps": [
+  {
+   "id": "2437-1",
+   "map": 2437,
+   "x": 37.3,
+   "y": 47.0,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-2",
+   "map": 2437,
+   "x": 37.7,
+   "y": 44.4,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-3",
+   "map": 2437,
+   "x": 38.9,
+   "y": 44.7,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-4",
+   "map": 2437,
+   "x": 39.0,
+   "y": 43.9,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-5",
+   "map": 2437,
+   "x": 39.4,
+   "y": 42.3,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-6",
+   "map": 2437,
+   "x": 39.9,
+   "y": 40.5,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-7",
+   "map": 2437,
+   "x": 40.4,
+   "y": 39.8,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-8",
+   "map": 2437,
+   "x": 40.8,
+   "y": 39.7,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-9",
+   "map": 2437,
+   "x": 41.7,
+   "y": 40.9,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-10",
+   "map": 2437,
+   "x": 43.3,
+   "y": 41.0,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-11",
+   "map": 2437,
+   "x": 43.4,
+   "y": 41.8,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-12",
+   "map": 2437,
+   "x": 43.4,
+   "y": 42.4,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-13",
+   "map": 2437,
+   "x": 43.1,
+   "y": 44.3,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-14",
+   "map": 2437,
+   "x": 39.9,
+   "y": 44.2,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-15",
+   "map": 2437,
+   "x": 40.2,
+   "y": 45.3,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-16",
+   "map": 2437,
+   "x": 40.1,
+   "y": 47.4,
+   "title": "Refulgent Copper, Zul'Aman"
+  },
+  {
+   "id": "2437-17",
+   "map": 2437,
+   "x": 39.7,
+   "y": 47.8,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-18",
+   "map": 2437,
+   "x": 38.9,
+   "y": 48.7,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-19",
+   "map": 2437,
+   "x": 39.3,
+   "y": 50.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-20",
+   "map": 2437,
+   "x": 39.1,
+   "y": 52.6,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-21",
+   "map": 2437,
+   "x": 41.0,
+   "y": 55.8,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-22",
+   "map": 2437,
+   "x": 40.7,
+   "y": 58.0,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-23",
+   "map": 2437,
+   "x": 41.4,
+   "y": 59.2,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-24",
+   "map": 2437,
+   "x": 41.8,
+   "y": 59.3,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-25",
+   "map": 2437,
+   "x": 42.9,
+   "y": 59.9,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-26",
+   "map": 2437,
+   "x": 42.8,
+   "y": 58.8,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-27",
+   "map": 2437,
+   "x": 43.6,
+   "y": 57.7,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-28",
+   "map": 2437,
+   "x": 43.1,
+   "y": 57.9,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-29",
+   "map": 2437,
+   "x": 42.4,
+   "y": 57.9,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-30",
+   "map": 2437,
+   "x": 42.1,
+   "y": 57.5,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-31",
+   "map": 2437,
+   "x": 41.8,
+   "y": 56.5,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-32",
+   "map": 2437,
+   "x": 42.8,
+   "y": 56.2,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-33",
+   "map": 2437,
+   "x": 43.9,
+   "y": 54.9,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-34",
+   "map": 2437,
+   "x": 44.2,
+   "y": 53.9,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-35",
+   "map": 2437,
+   "x": 44.0,
+   "y": 55.6,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-36",
+   "map": 2437,
+   "x": 44.3,
+   "y": 56.2,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-37",
+   "map": 2437,
+   "x": 44.9,
+   "y": 55.6,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-38",
+   "map": 2437,
+   "x": 44.7,
+   "y": 56.2,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-39",
+   "map": 2437,
+   "x": 44.8,
+   "y": 57.0,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-40",
+   "map": 2437,
+   "x": 45.4,
+   "y": 57.2,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-41",
+   "map": 2437,
+   "x": 44.2,
+   "y": 58.0,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-42",
+   "map": 2437,
+   "x": 44.8,
+   "y": 59.1,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-43",
+   "map": 2437,
+   "x": 45.3,
+   "y": 59.5,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-44",
+   "map": 2437,
+   "x": 47.6,
+   "y": 57.0,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-45",
+   "map": 2437,
+   "x": 48.1,
+   "y": 55.4,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-46",
+   "map": 2437,
+   "x": 46.8,
+   "y": 54.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-47",
+   "map": 2437,
+   "x": 47.3,
+   "y": 53.7,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-48",
+   "map": 2437,
+   "x": 48.2,
+   "y": 52.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-49",
+   "map": 2437,
+   "x": 46.5,
+   "y": 51.0,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-50",
+   "map": 2437,
+   "x": 47.3,
+   "y": 49.8,
+   "title": "Refulgent Copper, Zul'Aman"
+  },
+  {
+   "id": "2437-51",
+   "map": 2437,
+   "x": 47.8,
+   "y": 50.4,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-52",
+   "map": 2437,
+   "x": 48.2,
+   "y": 49.9,
+   "title": "Brilliant Silver, Zul'Aman"
+  },
+  {
+   "id": "2437-53",
+   "map": 2437,
+   "x": 48.6,
+   "y": 50.6,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-54",
+   "map": 2437,
+   "x": 49.0,
+   "y": 49.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-55",
+   "map": 2437,
+   "x": 49.4,
+   "y": 48.9,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-56",
+   "map": 2437,
+   "x": 49.7,
+   "y": 48.1,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-57",
+   "map": 2437,
+   "x": 48.8,
+   "y": 47.1,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-58",
+   "map": 2437,
+   "x": 47.8,
+   "y": 46.0,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-59",
+   "map": 2437,
+   "x": 46.6,
+   "y": 45.1,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-60",
+   "map": 2437,
+   "x": 46.2,
+   "y": 44.8,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-61",
+   "map": 2437,
+   "x": 45.8,
+   "y": 44.2,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-62",
+   "map": 2437,
+   "x": 45.7,
+   "y": 46.9,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-63",
+   "map": 2437,
+   "x": 46.5,
+   "y": 47.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-64",
+   "map": 2437,
+   "x": 46.2,
+   "y": 48.5,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-65",
+   "map": 2437,
+   "x": 45.9,
+   "y": 49.3,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-66",
+   "map": 2437,
+   "x": 45.5,
+   "y": 49.0,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-67",
+   "map": 2437,
+   "x": 45.1,
+   "y": 50.4,
+   "title": "Brilliant Silver, Zul'Aman"
+  },
+  {
+   "id": "2437-68",
+   "map": 2437,
+   "x": 45.1,
+   "y": 51.6,
+   "title": "Refulgent Copper, Zul'Aman"
+  },
+  {
+   "id": "2437-69",
+   "map": 2437,
+   "x": 44.9,
+   "y": 52.5,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-70",
+   "map": 2437,
+   "x": 45.0,
+   "y": 54.0,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-71",
+   "map": 2437,
+   "x": 43.9,
+   "y": 52.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-72",
+   "map": 2437,
+   "x": 43.7,
+   "y": 50.2,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-73",
+   "map": 2437,
+   "x": 42.1,
+   "y": 51.9,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-74",
+   "map": 2437,
+   "x": 42.6,
+   "y": 52.5,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-75",
+   "map": 2437,
+   "x": 43.5,
+   "y": 53.4,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-76",
+   "map": 2437,
+   "x": 43.1,
+   "y": 53.7,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-77",
+   "map": 2437,
+   "x": 42.0,
+   "y": 53.9,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-78",
+   "map": 2437,
+   "x": 41.5,
+   "y": 53.0,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-79",
+   "map": 2437,
+   "x": 41.0,
+   "y": 53.1,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-80",
+   "map": 2437,
+   "x": 40.5,
+   "y": 52.9,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-81",
+   "map": 2437,
+   "x": 40.8,
+   "y": 51.3,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-82",
+   "map": 2437,
+   "x": 40.7,
+   "y": 50.2,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-83",
+   "map": 2437,
+   "x": 40.5,
+   "y": 49.5,
+   "title": "Refulgent Copper, Zul'Aman"
+  },
+  {
+   "id": "2437-84",
+   "map": 2437,
+   "x": 42.0,
+   "y": 49.0,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-85",
+   "map": 2437,
+   "x": 41.4,
+   "y": 48.7,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-86",
+   "map": 2437,
+   "x": 41.2,
+   "y": 47.8,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-87",
+   "map": 2437,
+   "x": 41.6,
+   "y": 47.5,
+   "title": "Refulgent Copper, Zul'Aman"
+  },
+  {
+   "id": "2437-88",
+   "map": 2437,
+   "x": 42.1,
+   "y": 47.7,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-89",
+   "map": 2437,
+   "x": 43.6,
+   "y": 47.4,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-90",
+   "map": 2437,
+   "x": 44.7,
+   "y": 48.4,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-91",
+   "map": 2437,
+   "x": 43.6,
+   "y": 46.5,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-92",
+   "map": 2437,
+   "x": 43.6,
+   "y": 45.9,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-93",
+   "map": 2437,
+   "x": 44.0,
+   "y": 44.7,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-94",
+   "map": 2437,
+   "x": 44.8,
+   "y": 44.0,
+   "title": "Umbral Tin Seam, Zul'Aman"
+  },
+  {
+   "id": "2437-95",
+   "map": 2437,
+   "x": 45.1,
+   "y": 43.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-96",
+   "map": 2437,
+   "x": 44.7,
+   "y": 43.0,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-97",
+   "map": 2437,
+   "x": 44.3,
+   "y": 43.0,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-98",
+   "map": 2437,
+   "x": 43.9,
+   "y": 43.1,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-99",
+   "map": 2437,
+   "x": 43.9,
+   "y": 42.0,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-100",
+   "map": 2437,
+   "x": 43.9,
+   "y": 41.3,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-101",
+   "map": 2437,
+   "x": 44.4,
+   "y": 41.0,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-102",
+   "map": 2437,
+   "x": 44.3,
+   "y": 40.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-103",
+   "map": 2437,
+   "x": 43.3,
+   "y": 39.5,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-104",
+   "map": 2437,
+   "x": 43.3,
+   "y": 38.2,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-105",
+   "map": 2437,
+   "x": 42.2,
+   "y": 38.8,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-106",
+   "map": 2437,
+   "x": 41.4,
+   "y": 38.4,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-107",
+   "map": 2437,
+   "x": 42.0,
+   "y": 37.4,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-108",
+   "map": 2437,
+   "x": 42.7,
+   "y": 37.2,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-109",
+   "map": 2437,
+   "x": 43.7,
+   "y": 36.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-110",
+   "map": 2437,
+   "x": 44.4,
+   "y": 37.6,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-111",
+   "map": 2437,
+   "x": 44.5,
+   "y": 38.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-112",
+   "map": 2437,
+   "x": 44.7,
+   "y": 40.1,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-113",
+   "map": 2437,
+   "x": 44.9,
+   "y": 41.2,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-114",
+   "map": 2437,
+   "x": 45.0,
+   "y": 41.8,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-115",
+   "map": 2437,
+   "x": 45.7,
+   "y": 42.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-116",
+   "map": 2437,
+   "x": 46.6,
+   "y": 42.6,
+   "title": "Brilliant Silver, Zul'Aman"
+  },
+  {
+   "id": "2437-117",
+   "map": 2437,
+   "x": 47.0,
+   "y": 43.0,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-118",
+   "map": 2437,
+   "x": 47.3,
+   "y": 43.7,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-119",
+   "map": 2437,
+   "x": 47.8,
+   "y": 44.0,
+   "title": "Brilliant Silver, Zul'Aman"
+  },
+  {
+   "id": "2437-120",
+   "map": 2437,
+   "x": 47.8,
+   "y": 43.2,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-121",
+   "map": 2437,
+   "x": 48.0,
+   "y": 42.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-122",
+   "map": 2437,
+   "x": 47.4,
+   "y": 41.6,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-123",
+   "map": 2437,
+   "x": 47.5,
+   "y": 40.9,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-124",
+   "map": 2437,
+   "x": 47.0,
+   "y": 41.2,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-125",
+   "map": 2437,
+   "x": 46.3,
+   "y": 39.9,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-126",
+   "map": 2437,
+   "x": 45.1,
+   "y": 39.0,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-127",
+   "map": 2437,
+   "x": 44.9,
+   "y": 36.6,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-128",
+   "map": 2437,
+   "x": 45.5,
+   "y": 36.7,
+   "title": "Tranquility Bloom, Zul'Aman"
+  },
+  {
+   "id": "2437-129",
+   "map": 2437,
+   "x": 46.4,
+   "y": 37.6,
+   "title": "Umbral Tin Seam, Zul'Aman"
+  },
+  {
+   "id": "2437-130",
+   "map": 2437,
+   "x": 45.8,
+   "y": 38.3,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-131",
+   "map": 2437,
+   "x": 46.4,
+   "y": 39.2,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-132",
+   "map": 2437,
+   "x": 47.4,
+   "y": 39.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-133",
+   "map": 2437,
+   "x": 48.0,
+   "y": 38.6,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-134",
+   "map": 2437,
+   "x": 49.3,
+   "y": 38.8,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-135",
+   "map": 2437,
+   "x": 48.2,
+   "y": 40.0,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-136",
+   "map": 2437,
+   "x": 48.3,
+   "y": 41.1,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-137",
+   "map": 2437,
+   "x": 48.7,
+   "y": 41.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-138",
+   "map": 2437,
+   "x": 48.8,
+   "y": 42.2,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-139",
+   "map": 2437,
+   "x": 49.5,
+   "y": 40.8,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-140",
+   "map": 2437,
+   "x": 50.1,
+   "y": 40.5,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-141",
+   "map": 2437,
+   "x": 50.3,
+   "y": 41.1,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-142",
+   "map": 2437,
+   "x": 49.8,
+   "y": 42.4,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-143",
+   "map": 2437,
+   "x": 50.0,
+   "y": 43.0,
+   "title": "Brilliant Silver, Zul'Aman"
+  },
+  {
+   "id": "2437-144",
+   "map": 2437,
+   "x": 49.0,
+   "y": 43.5,
+   "title": "Argentleaf, Zul'Aman"
+  },
+  {
+   "id": "2437-145",
+   "map": 2437,
+   "x": 48.3,
+   "y": 44.3,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-146",
+   "map": 2437,
+   "x": 48.6,
+   "y": 44.9,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-147",
+   "map": 2437,
+   "x": 48.9,
+   "y": 45.4,
+   "title": "Azeroot, Zul'Aman"
+  },
+  {
+   "id": "2437-148",
+   "map": 2437,
+   "x": 49.9,
+   "y": 43.9,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-149",
+   "map": 2437,
+   "x": 51.1,
+   "y": 45.0,
+   "title": "Umbral Tin, Zul'Aman"
+  },
+  {
+   "id": "2437-150",
+   "map": 2437,
+   "x": 50.4,
+   "y": 46.4,
+   "title": "Umbral Tin, Zul'Aman"
+  }
+ ]
+}

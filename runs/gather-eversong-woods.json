@@ -1,0 +1,1058 @@
+{
+ "order": 20,
+ "name": "Gather: Eversong Woods",
+ "mode": "gather",
+ "about": "A herb and ore loop in Eversong Woods, centred on its richest spawn points at today's prices (60 Azeroot, 41 Umbral Tin, 37 Argentleaf, 12 Tranquility Bloom). Cheap herbs aren't steered for; pick them as you pass. Spawn points from GatherMate2_Data, so some will be empty. The arrow moves on as you pass each spot.",
+ "steps": [
+  {
+   "id": "2395-1",
+   "map": 2395,
+   "x": 51.1,
+   "y": 50.9,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-2",
+   "map": 2395,
+   "x": 51.1,
+   "y": 51.9,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-3",
+   "map": 2395,
+   "x": 52.1,
+   "y": 52.4,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-4",
+   "map": 2395,
+   "x": 51.9,
+   "y": 53.2,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-5",
+   "map": 2395,
+   "x": 52.7,
+   "y": 54.0,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-6",
+   "map": 2395,
+   "x": 53.2,
+   "y": 53.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-7",
+   "map": 2395,
+   "x": 53.0,
+   "y": 52.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-8",
+   "map": 2395,
+   "x": 53.9,
+   "y": 51.5,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-9",
+   "map": 2395,
+   "x": 53.7,
+   "y": 50.5,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-10",
+   "map": 2395,
+   "x": 52.2,
+   "y": 49.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-11",
+   "map": 2395,
+   "x": 51.8,
+   "y": 48.8,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-12",
+   "map": 2395,
+   "x": 53.0,
+   "y": 46.5,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-13",
+   "map": 2395,
+   "x": 53.6,
+   "y": 47.7,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-14",
+   "map": 2395,
+   "x": 54.4,
+   "y": 46.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-15",
+   "map": 2395,
+   "x": 55.4,
+   "y": 45.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-16",
+   "map": 2395,
+   "x": 55.7,
+   "y": 43.9,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-17",
+   "map": 2395,
+   "x": 55.5,
+   "y": 45.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-18",
+   "map": 2395,
+   "x": 55.5,
+   "y": 46.8,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-19",
+   "map": 2395,
+   "x": 54.6,
+   "y": 51.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-20",
+   "map": 2395,
+   "x": 56.0,
+   "y": 51.9,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-21",
+   "map": 2395,
+   "x": 56.5,
+   "y": 50.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-22",
+   "map": 2395,
+   "x": 56.3,
+   "y": 48.9,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-23",
+   "map": 2395,
+   "x": 57.5,
+   "y": 49.1,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-24",
+   "map": 2395,
+   "x": 57.7,
+   "y": 50.4,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-25",
+   "map": 2395,
+   "x": 57.4,
+   "y": 52.5,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-26",
+   "map": 2395,
+   "x": 57.3,
+   "y": 53.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-27",
+   "map": 2395,
+   "x": 56.2,
+   "y": 56.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-28",
+   "map": 2395,
+   "x": 55.9,
+   "y": 57.2,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-29",
+   "map": 2395,
+   "x": 54.7,
+   "y": 57.5,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-30",
+   "map": 2395,
+   "x": 55.1,
+   "y": 57.0,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-31",
+   "map": 2395,
+   "x": 55.2,
+   "y": 56.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-32",
+   "map": 2395,
+   "x": 54.2,
+   "y": 55.0,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-33",
+   "map": 2395,
+   "x": 53.8,
+   "y": 54.4,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-34",
+   "map": 2395,
+   "x": 52.5,
+   "y": 55.8,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-35",
+   "map": 2395,
+   "x": 53.2,
+   "y": 56.2,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-36",
+   "map": 2395,
+   "x": 54.0,
+   "y": 56.4,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-37",
+   "map": 2395,
+   "x": 53.3,
+   "y": 57.0,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-38",
+   "map": 2395,
+   "x": 52.9,
+   "y": 57.4,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-39",
+   "map": 2395,
+   "x": 51.8,
+   "y": 57.3,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-40",
+   "map": 2395,
+   "x": 52.2,
+   "y": 57.7,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-41",
+   "map": 2395,
+   "x": 52.5,
+   "y": 58.2,
+   "title": "Tranquility Bloom, Eversong Woods"
+  },
+  {
+   "id": "2395-42",
+   "map": 2395,
+   "x": 52.2,
+   "y": 59.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-43",
+   "map": 2395,
+   "x": 52.6,
+   "y": 60.5,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-44",
+   "map": 2395,
+   "x": 53.1,
+   "y": 60.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-45",
+   "map": 2395,
+   "x": 52.7,
+   "y": 61.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-46",
+   "map": 2395,
+   "x": 53.4,
+   "y": 61.5,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-47",
+   "map": 2395,
+   "x": 54.0,
+   "y": 60.7,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-48",
+   "map": 2395,
+   "x": 54.2,
+   "y": 59.7,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-49",
+   "map": 2395,
+   "x": 53.7,
+   "y": 59.1,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-50",
+   "map": 2395,
+   "x": 53.1,
+   "y": 58.6,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-51",
+   "map": 2395,
+   "x": 54.1,
+   "y": 57.9,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-52",
+   "map": 2395,
+   "x": 54.9,
+   "y": 58.8,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-53",
+   "map": 2395,
+   "x": 54.9,
+   "y": 59.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-54",
+   "map": 2395,
+   "x": 55.1,
+   "y": 60.5,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-55",
+   "map": 2395,
+   "x": 55.4,
+   "y": 61.2,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-56",
+   "map": 2395,
+   "x": 54.5,
+   "y": 61.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-57",
+   "map": 2395,
+   "x": 54.1,
+   "y": 61.9,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-58",
+   "map": 2395,
+   "x": 53.7,
+   "y": 63.1,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-59",
+   "map": 2395,
+   "x": 54.4,
+   "y": 63.9,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-60",
+   "map": 2395,
+   "x": 55.2,
+   "y": 63.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-61",
+   "map": 2395,
+   "x": 56.2,
+   "y": 61.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-62",
+   "map": 2395,
+   "x": 56.3,
+   "y": 60.0,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-63",
+   "map": 2395,
+   "x": 56.3,
+   "y": 59.1,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-64",
+   "map": 2395,
+   "x": 57.8,
+   "y": 59.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-65",
+   "map": 2395,
+   "x": 57.7,
+   "y": 61.1,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-66",
+   "map": 2395,
+   "x": 56.8,
+   "y": 62.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-67",
+   "map": 2395,
+   "x": 56.2,
+   "y": 62.2,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-68",
+   "map": 2395,
+   "x": 55.9,
+   "y": 62.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-69",
+   "map": 2395,
+   "x": 56.3,
+   "y": 63.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-70",
+   "map": 2395,
+   "x": 57.1,
+   "y": 65.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-71",
+   "map": 2395,
+   "x": 58.7,
+   "y": 65.0,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-72",
+   "map": 2395,
+   "x": 59.1,
+   "y": 65.6,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-73",
+   "map": 2395,
+   "x": 60.9,
+   "y": 63.5,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-74",
+   "map": 2395,
+   "x": 60.6,
+   "y": 63.1,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-75",
+   "map": 2395,
+   "x": 60.8,
+   "y": 61.9,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-76",
+   "map": 2395,
+   "x": 59.9,
+   "y": 61.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-77",
+   "map": 2395,
+   "x": 58.9,
+   "y": 57.4,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-78",
+   "map": 2395,
+   "x": 59.2,
+   "y": 51.5,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-79",
+   "map": 2395,
+   "x": 58.4,
+   "y": 50.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-80",
+   "map": 2395,
+   "x": 59.2,
+   "y": 49.7,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-81",
+   "map": 2395,
+   "x": 58.7,
+   "y": 47.8,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-82",
+   "map": 2395,
+   "x": 58.0,
+   "y": 48.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-83",
+   "map": 2395,
+   "x": 58.0,
+   "y": 46.9,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-84",
+   "map": 2395,
+   "x": 58.1,
+   "y": 42.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-85",
+   "map": 2395,
+   "x": 58.7,
+   "y": 43.2,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-86",
+   "map": 2395,
+   "x": 59.3,
+   "y": 41.8,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-87",
+   "map": 2395,
+   "x": 59.3,
+   "y": 44.2,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-88",
+   "map": 2395,
+   "x": 61.7,
+   "y": 43.7,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-89",
+   "map": 2395,
+   "x": 61.8,
+   "y": 45.0,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-90",
+   "map": 2395,
+   "x": 61.4,
+   "y": 46.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-91",
+   "map": 2395,
+   "x": 61.0,
+   "y": 45.4,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-92",
+   "map": 2395,
+   "x": 59.7,
+   "y": 46.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-93",
+   "map": 2395,
+   "x": 59.3,
+   "y": 47.5,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-94",
+   "map": 2395,
+   "x": 60.4,
+   "y": 47.8,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-95",
+   "map": 2395,
+   "x": 61.8,
+   "y": 48.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-96",
+   "map": 2395,
+   "x": 61.4,
+   "y": 49.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-97",
+   "map": 2395,
+   "x": 61.6,
+   "y": 50.7,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-98",
+   "map": 2395,
+   "x": 62.4,
+   "y": 51.6,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-99",
+   "map": 2395,
+   "x": 62.4,
+   "y": 52.8,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-100",
+   "map": 2395,
+   "x": 61.4,
+   "y": 52.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-101",
+   "map": 2395,
+   "x": 60.6,
+   "y": 51.9,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-102",
+   "map": 2395,
+   "x": 60.1,
+   "y": 54.6,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-103",
+   "map": 2395,
+   "x": 60.6,
+   "y": 54.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-104",
+   "map": 2395,
+   "x": 61.2,
+   "y": 54.8,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-105",
+   "map": 2395,
+   "x": 61.6,
+   "y": 54.3,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-106",
+   "map": 2395,
+   "x": 61.6,
+   "y": 55.7,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-107",
+   "map": 2395,
+   "x": 61.1,
+   "y": 55.7,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-108",
+   "map": 2395,
+   "x": 60.7,
+   "y": 56.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-109",
+   "map": 2395,
+   "x": 60.2,
+   "y": 56.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-110",
+   "map": 2395,
+   "x": 60.2,
+   "y": 56.9,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-111",
+   "map": 2395,
+   "x": 61.0,
+   "y": 57.2,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-112",
+   "map": 2395,
+   "x": 61.4,
+   "y": 56.6,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-113",
+   "map": 2395,
+   "x": 62.0,
+   "y": 56.6,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-114",
+   "map": 2395,
+   "x": 61.7,
+   "y": 57.5,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-115",
+   "map": 2395,
+   "x": 61.9,
+   "y": 58.1,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-116",
+   "map": 2395,
+   "x": 61.9,
+   "y": 58.8,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-117",
+   "map": 2395,
+   "x": 61.6,
+   "y": 59.6,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-118",
+   "map": 2395,
+   "x": 61.0,
+   "y": 58.9,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-119",
+   "map": 2395,
+   "x": 60.5,
+   "y": 58.4,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-120",
+   "map": 2395,
+   "x": 60.0,
+   "y": 58.9,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-121",
+   "map": 2395,
+   "x": 60.0,
+   "y": 59.5,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-122",
+   "map": 2395,
+   "x": 60.4,
+   "y": 60.5,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-123",
+   "map": 2395,
+   "x": 61.5,
+   "y": 61.9,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-124",
+   "map": 2395,
+   "x": 62.3,
+   "y": 61.7,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-125",
+   "map": 2395,
+   "x": 63.3,
+   "y": 62.3,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-126",
+   "map": 2395,
+   "x": 62.9,
+   "y": 60.0,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-127",
+   "map": 2395,
+   "x": 62.6,
+   "y": 59.2,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-128",
+   "map": 2395,
+   "x": 62.4,
+   "y": 58.4,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-129",
+   "map": 2395,
+   "x": 62.7,
+   "y": 57.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-130",
+   "map": 2395,
+   "x": 63.1,
+   "y": 55.4,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-131",
+   "map": 2395,
+   "x": 62.0,
+   "y": 55.4,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-132",
+   "map": 2395,
+   "x": 62.4,
+   "y": 55.0,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-133",
+   "map": 2395,
+   "x": 62.7,
+   "y": 54.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-134",
+   "map": 2395,
+   "x": 63.3,
+   "y": 53.3,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-135",
+   "map": 2395,
+   "x": 63.9,
+   "y": 52.7,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-136",
+   "map": 2395,
+   "x": 63.6,
+   "y": 52.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-137",
+   "map": 2395,
+   "x": 62.9,
+   "y": 52.0,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-138",
+   "map": 2395,
+   "x": 62.9,
+   "y": 51.2,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-139",
+   "map": 2395,
+   "x": 62.5,
+   "y": 50.9,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-140",
+   "map": 2395,
+   "x": 62.8,
+   "y": 49.6,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-141",
+   "map": 2395,
+   "x": 62.6,
+   "y": 47.9,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-142",
+   "map": 2395,
+   "x": 63.3,
+   "y": 47.8,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-143",
+   "map": 2395,
+   "x": 63.8,
+   "y": 46.7,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-144",
+   "map": 2395,
+   "x": 64.0,
+   "y": 48.3,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-145",
+   "map": 2395,
+   "x": 63.2,
+   "y": 49.6,
+   "title": "Azeroot, Eversong Woods"
+  },
+  {
+   "id": "2395-146",
+   "map": 2395,
+   "x": 63.3,
+   "y": 50.4,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-147",
+   "map": 2395,
+   "x": 63.9,
+   "y": 50.4,
+   "title": "Argentleaf, Eversong Woods"
+  },
+  {
+   "id": "2395-148",
+   "map": 2395,
+   "x": 65.3,
+   "y": 49.6,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-149",
+   "map": 2395,
+   "x": 65.5,
+   "y": 48.5,
+   "title": "Umbral Tin, Eversong Woods"
+  },
+  {
+   "id": "2395-150",
+   "map": 2395,
+   "x": 66.3,
+   "y": 51.1,
+   "title": "Umbral Tin, Eversong Woods"
+  }
+ ]
+}
