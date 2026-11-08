@@ -1,0 +1,100 @@
+{
+  "char": "Cortica",
+  "order": 9,
+  "name": "Decor trainers",
+  "about": "Cortica's 4k+ decor recipes, from the Jade Forest on (25 Oct 2026). Coordinates from Warcraft Wiki and guides; fix any with Here.",
+  "steps": [
+    {
+      "id": "shatt-jc",
+      "map": 111,
+      "title": "Nemiha (JC), Shattrath",
+      "learn": "Draenei Crystal Chandelier, Shattrath Lamppost",
+      "note": "Lower City side; no faction needed (Hamanar on Aldor Rise, 35.8, 20.6, is Aldor-only)",
+      "x": 36.2,
+      "y": 47.0
+    },
+    {
+      "id": "nr-dal-jc",
+      "map": 125,
+      "x": 40.8,
+      "y": 34.5,
+      "title": "Timothy Jones (JC), Dalaran, Northrend",
+      "learn": "Kirin Tor Glass Table",
+      "note": "Cartier & Co."
+    },
+    {
+      "id": "nr-dal-alch",
+      "map": 125,
+      "x": 42.6,
+      "y": 32.1,
+      "title": "Linzy Blackbolt (Alchemy), Dalaran, Northrend",
+      "learn": "Icecrown Plague Canister",
+      "note": "Agronomical Apothecary"
+    },
+    {
+      "id": "oribos-jc",
+      "map": 1670,
+      "x": 35.2,
+      "y": 41.5,
+      "title": "Appraiser Au'vesk (JC), Oribos",
+      "learn": "Maldraxxian Runic Tablet",
+      "note": "Hall of Shapes"
+    },
+    {
+      "id": "boralus-jc",
+      "map": 1161,
+      "faction": "Alliance",
+      "title": "Samuel D. Colton III (JC), Boralus",
+      "learn": "Zandalari Skullfire Lamp",
+      "note": "Colton's Jewels, Tradewinds Market",
+      "x": 75.2,
+      "y": 9.9
+    },
+    {
+      "id": "dazar-jc",
+      "map": 1165,
+      "faction": "Horde",
+      "title": "Seshuli (JC), Dazar'alor",
+      "learn": "Zandalari Skullfire Lamp",
+      "note": "Hall of Glimmers, Terrace of Crafters (entrance 44.3, 37.0)",
+      "x": 47.0,
+      "y": 37.9
+    },
+    {
+      "id": "legion-dal-jc",
+      "map": 627,
+      "x": 40.8,
+      "y": 34.5,
+      "title": "Timothy Jones (JC), Dalaran, Broken Isles",
+      "learn": "Suramar Jeweler's Assortment",
+      "note": "Cartier & Co."
+    },
+    {
+      "id": "legion-dal-alch",
+      "map": 627,
+      "x": 41.3,
+      "y": 33.3,
+      "title": "Deucus Valdera (Alchemy), Dalaran, Broken Isles",
+      "learn": "Arcan'dor Cutting Fountain",
+      "note": "Agronomical Apothecary"
+    },
+    {
+      "id": "dornogal-jc",
+      "map": 2339,
+      "x": 49.6,
+      "y": 71.0,
+      "title": "Makir (JC), Dornogal",
+      "learn": "Octagonal Ochre Window, Gundargaz Candelabra",
+      "note": "Forgegrounds"
+    },
+    {
+      "id": "dornogal-alch",
+      "map": 2339,
+      "x": 47.4,
+      "y": 70.6,
+      "title": "Tarig (Alchemy), Dornogal",
+      "learn": "Boulder Springs Hot Tub",
+      "note": "Forgegrounds"
+    }
+  ]
+}

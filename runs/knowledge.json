@@ -1,135 +1,136 @@
 {
- "order": 19,
- "name": "Knowledge: Herbalism + Mining treasures",
- "about": "The 16 one-off Midnight Herbalism and Mining treasures, 3 knowledge points each (48 in all), ordered zone by zone. Coordinates from Method's treasure guide. Use the 3 Thalassian Phoenix Plumes in your bags first (5 Herbalism points each).",
- "steps": [
-  {
-   "id": "kt-1",
-   "map": 2393,
-   "x": 48.86,
-   "y": 75.93,
-   "title": "Herbalism treasure: Simple Leaf Pruners, Silvermoon",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-2",
-   "map": 2395,
-   "x": 64.19,
-   "y": 30.41,
-   "title": "Herbalism treasure: A Spade, Eversong Woods",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-3",
-   "map": 2395,
-   "x": 37.96,
-   "y": 45.35,
-   "title": "Mining treasure: Solid Ore Punchers, Eversong Woods",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-4",
-   "map": 2437,
-   "x": 41.91,
-   "y": 46.03,
-   "title": "Herbalism treasure: Sweeping Harvester's Scythe, Zul'Aman",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-5",
-   "map": 2437,
-   "x": 41.99,
-   "y": 46.51,
-   "title": "Mining treasure: Spelunker's Lucky Charm, Zul'Aman",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-6",
-   "map": 2536,
-   "x": 33.62,
-   "y": 65.74,
-   "title": "Mining treasure: Amani Expert's Chisel, Zul'Aman",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-7",
-   "map": 2413,
-   "x": 38.17,
-   "y": 66.97,
-   "title": "Herbalism treasure: Blooming Bud, Harandar",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-8",
-   "map": 2413,
-   "x": 38.79,
-   "y": 65.89,
-   "title": "Mining treasure: Spare Expedition Torch, Harandar",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-9",
-   "map": 2413,
-   "x": 36.6,
-   "y": 25.08,
-   "title": "Herbalism treasure: Lightbloom Root, Harandar",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-10",
-   "map": 2413,
-   "x": 51.23,
-   "y": 55.65,
-   "title": "Herbalism treasure: Planting Shovel, Harandar",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-11",
-   "map": 2413,
-   "x": 76.06,
-   "y": 51.1,
-   "title": "Herbalism treasure: Harvester's Sickle, Harandar",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-12",
-   "map": 2405,
-   "x": 34.65,
-   "y": 57.0,
-   "title": "Herbalism treasure: Peculiar Lotus, Voidstorm",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-13",
-   "map": 2405,
-   "x": 41.8,
-   "y": 38.25,
-   "title": "Mining treasure: Star Metal Deposit, Voidstorm",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-14",
-   "map": 2444,
-   "x": 28.23,
-   "y": 38.59,
-   "title": "Mining treasure: Glimmering Void Pearl, Voidstorm",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-15",
-   "map": 2444,
-   "x": 30.48,
-   "y": 69.07,
-   "title": "Mining treasure: Miner's Guide to Voidstorm, Voidstorm",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  },
-  {
-   "id": "kt-16",
-   "map": 2444,
-   "x": 54.17,
-   "y": 51.49,
-   "title": "Mining treasure: Lost Voidstorm Satchel, Voidstorm",
-   "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
-  }
- ]
+  "char": "Zulcalice",
+  "order": 19,
+  "name": "Knowledge: Herbalism + Mining treasures",
+  "about": "The 16 one-off Midnight Herbalism and Mining treasures, 3 knowledge points each (48 in all), ordered zone by zone. Coordinates from Method's treasure guide. Use the 3 Thalassian Phoenix Plumes in your bags first (5 Herbalism points each).",
+  "steps": [
+    {
+      "id": "kt-1",
+      "map": 2393,
+      "x": 48.86,
+      "y": 75.93,
+      "title": "Herbalism treasure: Simple Leaf Pruners, Silvermoon",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-2",
+      "map": 2395,
+      "x": 64.19,
+      "y": 30.41,
+      "title": "Herbalism treasure: A Spade, Eversong Woods",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-3",
+      "map": 2395,
+      "x": 37.96,
+      "y": 45.35,
+      "title": "Mining treasure: Solid Ore Punchers, Eversong Woods",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-4",
+      "map": 2437,
+      "x": 41.91,
+      "y": 46.03,
+      "title": "Herbalism treasure: Sweeping Harvester's Scythe, Zul'Aman",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-5",
+      "map": 2437,
+      "x": 41.99,
+      "y": 46.51,
+      "title": "Mining treasure: Spelunker's Lucky Charm, Zul'Aman",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-6",
+      "map": 2536,
+      "x": 33.62,
+      "y": 65.74,
+      "title": "Mining treasure: Amani Expert's Chisel, Zul'Aman",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-7",
+      "map": 2413,
+      "x": 38.17,
+      "y": 66.97,
+      "title": "Herbalism treasure: Blooming Bud, Harandar",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-8",
+      "map": 2413,
+      "x": 38.79,
+      "y": 65.89,
+      "title": "Mining treasure: Spare Expedition Torch, Harandar",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-9",
+      "map": 2413,
+      "x": 36.6,
+      "y": 25.08,
+      "title": "Herbalism treasure: Lightbloom Root, Harandar",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-10",
+      "map": 2413,
+      "x": 51.23,
+      "y": 55.65,
+      "title": "Herbalism treasure: Planting Shovel, Harandar",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-11",
+      "map": 2413,
+      "x": 76.06,
+      "y": 51.1,
+      "title": "Herbalism treasure: Harvester's Sickle, Harandar",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-12",
+      "map": 2405,
+      "x": 34.65,
+      "y": 57.0,
+      "title": "Herbalism treasure: Peculiar Lotus, Voidstorm",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-13",
+      "map": 2405,
+      "x": 41.8,
+      "y": 38.25,
+      "title": "Mining treasure: Star Metal Deposit, Voidstorm",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-14",
+      "map": 2444,
+      "x": 28.23,
+      "y": 38.59,
+      "title": "Mining treasure: Glimmering Void Pearl, Voidstorm",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-15",
+      "map": 2444,
+      "x": 30.48,
+      "y": 69.07,
+      "title": "Mining treasure: Miner's Guide to Voidstorm, Voidstorm",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    },
+    {
+      "id": "kt-16",
+      "map": 2444,
+      "x": 54.17,
+      "y": 51.49,
+      "title": "Mining treasure: Lost Voidstorm Satchel, Voidstorm",
+      "note": "3 knowledge points. The minimap icon is sensitive to height: fly up and down if you can't see it"
+    }
+  ]
 }

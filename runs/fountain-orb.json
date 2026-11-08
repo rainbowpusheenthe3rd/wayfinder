@@ -1,0 +1,26 @@
+{
+  "char": "Cortica",
+  "order": 5,
+  "name": "Fountain orb",
+  "about": "Orb of Mystery from Big Keech for 20,000g (the AH wants ~20.9k), in the old (Mists) Vale, for the Jade Temple Dragon Fountain.",
+  "steps": [
+    {
+      "id": "zidormi",
+      "map": 1530,
+      "x": 81.0,
+      "y": 29.6,
+      "title": "Zidormi, Vale of Eternal Blossoms",
+      "learn": "Ask to see the Vale before N'Zoth's assault",
+      "note": "Seat of Knowledge. Needs the Vale questline done on this character"
+    },
+    {
+      "id": "keech",
+      "map": 390,
+      "x": 70.0,
+      "y": 42.0,
+      "title": "Big Keech, old Vale",
+      "learn": "Buy 1 Orb of Mystery, 20,000g, for the Jade Temple Dragon Fountain",
+      "note": "Patrols the dried lakebed outside Mogu'shan Palace"
+    }
+  ]
+}

@@ -24,7 +24,7 @@ local GATHER_YARDS, GATHER_AHEAD = 30, 12          -- gather runs: a spot this c
 local TICK = 0.05
 
 local db
-local frame, arrow, shadow, title, learn, info, nextButton, runButton, catchButton
+local frame, arrow, shadow, title, learn, info, nextButton, runButton, catchButton, who
 local pinned, trainerStep, lastSpot
 local Announce, CatchLine  -- defined below, used by Update
 local seen = {}  -- run id -> how many of its item you had last tick, to announce each one you gather
@@ -101,7 +101,10 @@ end
 local function Runs()
     local out = {}
     if db.catchup and #db.catchup.steps > 0 then out[1] = db.catchup end
-    for _, r in ipairs(ns.RUNS or {}) do out[#out + 1] = r end
+    local me = UnitName("player")
+    for _, r in ipairs(ns.RUNS or {}) do
+        if not r.char or r.char == me then out[#out + 1] = r end  -- another character's run isn't offered here
+    end
     if #db.custom.steps > 0 then out[#out + 1] = db.custom end
     return out
 end
@@ -191,6 +194,18 @@ end
 
 local function CharKey() return UnitName("player") .. "-" .. GetRealmName() end
 
+-- "Wayfinder · Zulcalice", the name in your class colour, and "(any character)" for a run nobody owns
+local function WhoTag(run)
+    local class = select(2, UnitClass("player"))
+    local cc = RAID_CLASS_COLORS and RAID_CLASS_COLORS[class]
+    local name = UnitName("player")
+    local tag = ("|cffd4a017Wayfinder|r · %s"):format(cc and cc.colorStr and ("|c%s%s|r"):format(cc.colorStr, name) or name)
+    if run and not run.char and run.id ~= "catch-up" and run.id ~= "my-waypoints" then
+        tag = tag .. " |cff999999(any character)|r"
+    end
+    return tag
+end
+
 -- Save the names in this character's minimap tracking menu, to read from the saved variables. Guessing a "Lumber"
 -- entry there wrongly flagged a character who can chop (players report the Harvesting Hatchet item toggles lumber
 -- display instead), so this is a record only, not a check.
@@ -227,6 +242,7 @@ local function Update()
         return
     end
     runButton:SetText(("%s  %d/%d"):format(run.name, math.min(n, total), total))
+    who:SetText(WhoTag(run))
     Pin(step)
     if not step then
         Point(); title:SetText("|cff33ff33Run complete|r"); learn:SetText("")
@@ -813,7 +829,11 @@ local function Build()
     arrow = frame:CreateTexture(nil, "ARTWORK", nil, 1)
     arrow:SetTexture(ARROW); arrow:SetSize(SIZE, SIZE)
     arrow:SetPoint("TOP", frame, "TOP", 0, 0)
-    arrow:SetVertexColor(1, 0.82, 0.2, 1)
+    -- themed to the character: the arrow takes your class colour, and a tag above it says who's playing and
+    -- whose run this is
+    local class = select(2, UnitClass("player"))
+    local cc = RAID_CLASS_COLORS and RAID_CLASS_COLORS[class]
+    if cc then arrow:SetVertexColor(cc.r, cc.g, cc.b, 1) else arrow:SetVertexColor(1, 0.82, 0.2, 1) end
 
     local function Text(font, anchor, gap)
         local t = frame:CreateFontString(nil, "OVERLAY", font)
@@ -824,6 +844,9 @@ local function Build()
     title = Text("GameFontNormal", arrow, -2)
     learn = Text("GameFontHighlightSmall", title, -2)
     info = Text("GameFontHighlightSmall", learn, -2)
+    who = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    who:SetPoint("BOTTOM", arrow, "TOP", 0, 2)
+    who:SetShadowOffset(1, -1); who:SetShadowColor(0, 0, 0, 1)
 
     local back = Button("< Back", 80, Prev)
     nextButton = Button("Next", 80, Next)
@@ -892,6 +915,7 @@ end
 
 local events = CreateFrame("Frame")
 events:RegisterEvent("ADDON_LOADED")
+events:RegisterEvent("PLAYER_LOGOUT")
 events:RegisterEvent("USER_WAYPOINT_UPDATED")
 events:RegisterEvent("PLAYER_ENTERING_WORLD")
 events:RegisterEvent("TRAINER_SHOW")
@@ -916,8 +940,16 @@ events:SetScript("OnEvent", function(_, event, name)
         db.places = db.places or {}
         db.queues = db.queues or {}
         if db.active == "lumberjack" and db.started then db.active = db.started end  -- undo the faulty detour
+        -- each character keeps its own chosen run (before this, one choice was shared by everyone)
+        db.activeBy = db.activeBy or {}
+        local me = UnitName("player")
+        if db.activeBy[me] then db.active = db.activeBy[me] end
         if ns.START and ns.START ~= db.started then  -- a new run handed over with --start: switch to it once
-            db.active, db.started = ns.START, ns.START
+            for _, r in ipairs(ns.RUNS or {}) do
+                if r.id == ns.START and (not r.char or r.char == me) then  -- only on the character it's for
+                    db.active, db.started = ns.START, ns.START
+                end
+            end
         end
         Build()
         Announce()
@@ -947,6 +979,8 @@ events:SetScript("OnEvent", function(_, event, name)
             end
         end
         wasInside = inside and true or false
+    elseif event == "PLAYER_LOGOUT" then
+        db.activeBy[UnitName("player")] = db.active
     elseif event == "USER_WAYPOINT_UPDATED" then
         AdoptPin()
     elseif event == "TRAINER_SHOW" then
