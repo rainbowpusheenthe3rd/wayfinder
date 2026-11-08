@@ -996,3 +996,53 @@ events:SetScript("OnEvent", function(_, event, name)
         QueueTick()
     end
 end)
+
+-- Minimap button, in Shan'do's style: half opacity until you point at it, drag to move it round the edge (the
+-- angle is kept in the saved variables). The tooltip says which addon and which character.
+if Minimap then  -- every client has one; test stubs may not
+    local REST, NAME, COLOUR = 0.5, "Wayfinder", "ffd4a017"
+    local b = CreateFrame("Button", "WayfinderMinimapButton", Minimap)
+    b:SetSize(24, 24)
+    b:SetFrameStrata("MEDIUM")
+    b:SetFrameLevel(Minimap:GetFrameLevel() + 8)
+    b:SetAlpha(REST)
+    b:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+    b:RegisterForDrag("LeftButton")
+    local tex = b:CreateTexture(nil, "ARTWORK")
+    tex:SetAllPoints()
+    tex:SetTexture("Interface\\AddOns\\Wayfinder\\icon")
+    local function Saved() WayfinderDB = WayfinderDB or {}; return WayfinderDB end
+    local function Place(angle)
+        local r = Minimap:GetWidth() / 2 + 6
+        b:ClearAllPoints()
+        b:SetPoint("CENTER", Minimap, "CENTER", r * math.cos(math.rad(angle)), r * math.sin(math.rad(angle)))
+    end
+    b:SetScript("OnEnter", function(self)
+        self:SetAlpha(1)
+        local cc = RAID_CLASS_COLORS and RAID_CLASS_COLORS[select(2, UnitClass("player"))]
+        local who = UnitName("player")
+        GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+        GameTooltip:AddLine(("|c%s%s|r · %s"):format(COLOUR, NAME, cc and cc.colorStr and ("|c%s%s|r"):format(cc.colorStr, who) or who))
+        GameTooltip:AddLine("Left-click: show or hide the arrow", 1, 1, 1)
+        GameTooltip:AddLine("Right-click: pick a run", 1, 1, 1)
+        GameTooltip:AddLine("Drag: move this button", 0.7, 0.7, 0.7)
+        GameTooltip:Show()
+    end)
+    b:SetScript("OnLeave", function(self) self:SetAlpha(REST); GameTooltip:Hide() end)
+    b:SetScript("OnClick", function(self, button)
+        if button == "RightButton" then PickRun(self)
+        else SlashCmdList.WAYFINDER(frame:IsShown() and "hide" or "show") end
+    end)
+    b:SetScript("OnDragStart", function(self)
+        self:SetScript("OnUpdate", function()
+            local mx, my = Minimap:GetCenter()
+            local cx, cy = GetCursorPosition()
+            local s = Minimap:GetEffectiveScale()
+            Saved().minimapAngle = math.deg(math.atan2(cy / s - my, cx / s - mx))
+            Place(Saved().minimapAngle)
+        end)
+    end)
+    b:SetScript("OnDragStop", function(self) self:SetScript("OnUpdate", nil) end)
+    b:RegisterEvent("PLAYER_LOGIN")
+    b:SetScript("OnEvent", function() Place(Saved().minimapAngle or 225) end)
+end
