@@ -15,6 +15,11 @@ local ADDON, ns = ...
 
 local ARROW = "Interface\\AddOns\\Wayfinder\\arrow"
 local EDGE = "Interface\\AddOns\\Wayfinder\\edge"   -- the 1px rim just outside the arrow, per frame
+-- Night elves get a wisp instead (tools/wisp_textures.py: same frames and camera as the arrow): a glowing head
+-- leading the way with a comet tail behind, blended as light, breathing, with motes circling it. /wf wisp toggles.
+local WISP = "Interface\\AddOns\\Wayfinder\\wisp"
+local MOTE = "Interface\\AddOns\\Wayfinder\\mote"
+local WISP_ALPHA, MOTES = 0.85, 4
 local ALPHA, HOVER_ALPHA = 0.5, 1.0                 -- see the world through it; solid while the mouse is on it
 local SIZE = 84
 local FRAMES, COLS = 64, 8                         -- the sprite sheets: COLS x COLS frames
@@ -25,6 +30,7 @@ local TICK = 0.05
 
 local db
 local frame, arrow, shadow, title, learn, info, nextButton, runButton, catchButton, who
+local motes = {}
 local pinned, trainerStep, lastSpot
 local Announce, CatchLine  -- defined below, used by Update
 local seen = {}  -- run id -> how many of its item you had last tick, to announce each one you gather
@@ -234,8 +240,54 @@ local function Point(bearing)
     end
 end
 
+-- the wisp is the default for night elves; WayfinderDB.wisp (set by /wf wisp) overrides it either way
+local function Wisp()
+    if db and db.wisp ~= nil then return db.wisp end
+    return select(2, UnitRace("player")) == "NightElf"
+end
+
+-- the arrow or the wisp, as chosen; called once the frame exists and whenever /wf wisp switches
+local function ApplyLook()
+    if not arrow then return end
+    local class = select(2, UnitClass("player"))
+    local cc = RAID_CLASS_COLORS and RAID_CLASS_COLORS[class]
+    if Wisp() then
+        arrow:SetTexture(WISP); arrow:SetBlendMode("ADD"); arrow:SetVertexColor(1, 1, 1, 1)
+        shadow:SetTexture(WISP); shadow:SetBlendMode("BLEND"); shadow:SetVertexColor(0, 0, 0, 0.35)
+        shadow:SetSize(SIZE * 1.1, SIZE * 1.1)
+    else
+        arrow:SetTexture(ARROW); arrow:SetBlendMode("BLEND")
+        if cc then arrow:SetVertexColor(cc.r, cc.g, cc.b, 1) else arrow:SetVertexColor(1, 0.82, 0.2, 1) end
+        shadow:SetTexture(EDGE); shadow:SetBlendMode("BLEND"); shadow:SetVertexColor(0, 0, 0, 1)
+        shadow:SetSize(SIZE, SIZE)
+        arrow:SetSize(SIZE, SIZE)
+        for _, m in ipairs(motes) do m:Hide() end
+    end
+end
+
+-- the wisp breathes (alpha and size on slow sines) and its motes circle it on a tilted ellipse, as if on the
+-- ground around it, each brightening and dimming on its own phase
+local function Animate()
+    if not (Wisp() and arrow and arrow:IsShown()) then
+        for _, m in ipairs(motes) do m:Hide() end
+        return
+    end
+    local t = GetTime()
+    arrow:SetAlpha(0.8 + 0.2 * math.sin(t * 2.2))
+    local grow = 1 + 0.035 * math.sin(t * 1.7)
+    arrow:SetSize(SIZE * grow, SIZE * grow)
+    for i, m in ipairs(motes) do
+        local a = t * (0.7 + 0.15 * i) + i * math.pi / 2
+        local r = 26 + 5 * math.sin(t * 1.3 + i)
+        m:ClearAllPoints()
+        m:SetPoint("CENTER", arrow, "CENTER", math.cos(a) * r, math.sin(a) * r * 0.45 + 4)
+        m:SetAlpha(0.35 + 0.45 * (0.5 + 0.5 * math.sin(t * 2.6 + i * 1.7)))
+        m:Show()
+    end
+end
+
 local function Update()
-    frame:SetAlpha(frame:IsMouseOver() and HOVER_ALPHA or ALPHA)
+    frame:SetAlpha(frame:IsMouseOver() and HOVER_ALPHA or (Wisp() and WISP_ALPHA or ALPHA))
     local step, n, total, run = Current()
     if not run then
         Point(); title:SetText("No runs loaded"); learn:SetText(""); info:SetText("")
@@ -831,9 +883,15 @@ local function Build()
     arrow:SetPoint("TOP", frame, "TOP", 0, 0)
     -- themed to the character: the arrow takes your class colour, and a tag above it says who's playing and
     -- whose run this is
-    local class = select(2, UnitClass("player"))
-    local cc = RAID_CLASS_COLORS and RAID_CLASS_COLORS[class]
-    if cc then arrow:SetVertexColor(cc.r, cc.g, cc.b, 1) else arrow:SetVertexColor(1, 0.82, 0.2, 1) end
+    for i = 1, MOTES do
+        local m = frame:CreateTexture(nil, "OVERLAY")
+        m:SetTexture(MOTE); m:SetBlendMode("ADD")
+        local size = 6 + 2 * (i % 3)
+        m:SetSize(size, size)
+        m:Hide()
+        motes[i] = m
+    end
+    ApplyLook()
 
     local function Text(font, anchor, gap)
         local t = frame:CreateFontString(nil, "OVERLAY", font)
@@ -865,6 +923,7 @@ local function Build()
         elapsed = 0
         if queueAt >= 1 then queueAt = 0; QueueTick() end
         Update()
+        Animate()
         CatchLine()
     end)
     if db.hidden then frame:Hide() end
@@ -880,6 +939,10 @@ SlashCmdList.WAYFINDER = function(msg)
     elseif cmd == "prev" or cmd == "back" then Prev()
     elseif cmd == "here" then Here()
     elseif cmd == "run" then CycleRun()
+    elseif cmd == "wisp" then
+        db.wisp = not Wisp()
+        ApplyLook()
+        Print(db.wisp and "a wisp will guide you" or "the arrow again")
     elseif cmd == "list" then
         local _, n, _, run = Current()
         if not run then return Print("no runs loaded") end
