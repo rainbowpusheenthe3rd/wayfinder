@@ -321,8 +321,11 @@ local function Animate()
     end
 end
 
+local Chrome  -- set with the frame, below: text and buttons up on hover, down at rest
 local function Update()
-    frame:SetAlpha(frame:IsMouseOver() and HOVER_ALPHA or (Wisp() and WISP_ALPHA or ALPHA))
+    local over = frame:IsMouseOver()
+    frame:SetAlpha(over and HOVER_ALPHA or (Wisp() and WISP_ALPHA or ALPHA))
+    Chrome(over)
     local step, n, total, run = Current()
     if not run then
         Point(); title:SetText("No runs loaded"); learn:SetText(""); info:SetText("")
@@ -888,18 +891,38 @@ local function Outline(t)
     if t.SetShadowOffset then t:SetShadowOffset(0, 0) end
 end
 
--- the red panel buttons at half strength (on top of the frame's own ALPHA): there, not shouting
-local SOFT = 0.5
+-- At rest the red panel buttons and the gold text sit at SOFT and the rest of the text at REST_TEXT (on top of
+-- the frame's own alpha, which the wisp keeps high so it glows): there, not shouting. With the mouse on
+-- Wayfinder, all of it comes up to full. Buttons fit their text, PAD wide on each side.
+local SOFT, REST_TEXT, PAD, MIN_W = 0.4, 0.8, 10, 44
+local soft, plain, arts = {}, {}, {}  -- gold text, other text and labels, button art
+local function Fit(b)
+    local fs = b.GetFontString and b:GetFontString()
+    local w = fs and fs.GetStringWidth and fs:GetStringWidth()
+    if w then b:SetWidth(math.max(MIN_W, math.ceil(w) + 2 * PAD)) end
+end
 local function Button(label, width, onClick)
     local b = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
     b:SetSize(width, 20)
+    local setText = b.SetText
+    b.SetText = function(self, text) setText(self, text); Fit(self) end  -- every new label refits the button
     b:SetText(label)
     b:SetScript("OnClick", onClick)
     for _, r in ipairs({ b:GetRegions() }) do
-        if r.GetObjectType and r:GetObjectType() == "Texture" then r:SetAlpha(SOFT) end
+        if r.GetObjectType and r:GetObjectType() == "Texture" then r:SetAlpha(SOFT); arts[#arts + 1] = r end
     end
-    Outline(b.GetFontString and b:GetFontString())
+    local fs = b.GetFontString and b:GetFontString()
+    Outline(fs)
+    if fs and fs.SetAlpha then fs:SetAlpha(REST_TEXT); plain[#plain + 1] = fs end
     return b
+end
+local hovered
+function Chrome(on)  -- everything to full while the mouse is on Wayfinder, back down when it leaves
+    if on == hovered then return end
+    hovered = on
+    for _, r in ipairs(arts) do r:SetAlpha(on and 1 or SOFT) end
+    for _, t in ipairs(soft) do t:SetAlpha(on and 1 or SOFT) end
+    for _, t in ipairs(plain) do t:SetAlpha(on and 1 or REST_TEXT) end
 end
 
 local function Build()
@@ -947,10 +970,12 @@ local function Build()
         t:SetPoint("TOP", anchor, "BOTTOM", 0, gap)
         t:SetShadowOffset(1, -1); t:SetShadowColor(0, 0, 0, 1)
         Outline(t)
+        if t.SetAlpha then t:SetAlpha(REST_TEXT) end
+        plain[#plain + 1] = t
         return t
     end
     title = Text("GameFontNormal", arrow, -2)
-    if title.SetAlpha then title:SetAlpha(SOFT) end  -- the gold title, softened like the buttons
+    plain[#plain] = nil; soft[#soft + 1] = title; title:SetAlpha(SOFT)  -- the gold title, softened like the buttons
     learn = Text("GameFontHighlightSmall", title, -2)
     info = Text("GameFontHighlightSmall", learn, -2)
     who = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
@@ -958,6 +983,7 @@ local function Build()
     who:SetShadowOffset(1, -1); who:SetShadowColor(0, 0, 0, 1)
     Outline(who)
     if who.SetAlpha then who:SetAlpha(SOFT) end
+    soft[#soft + 1] = who
 
     local back = Button("< Back", 80, Prev)
     nextButton = Button("Next", 80, Next)
