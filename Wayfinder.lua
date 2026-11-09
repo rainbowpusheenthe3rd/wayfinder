@@ -37,12 +37,45 @@ local seen = {}  -- run id -> how many of its item you had last tick, to announc
 
 -- the game's own peon voice lines (FileDataIDs; Sound/Creature/Peon). "Work, work" and "Work complete" are
 -- confirmed by two addons (Skillet, Questie), the rest by one (a WoW streaming theme's credits).
-local PEON_CHOP = { 558147, 558140, 558139, 558136, 558138 }  -- Work work, Okie dokie, Be happy to, I can do that, I'll try
-local PEON_DONE, PEON_READY = 558132, 558137                  -- Work complete; Ready to work
-local PEON_WHAT = { 558143, 558135 }                           -- What you want? Something need doing?
-local PEON_PISSED = 558146                                     -- Me not that kind of orc!
-local function Peon(id)
-    if db.sound ~= false and PlaySoundFile then PlaySoundFile(id, "Master") end
+local PEON = {
+    chop = { 558147, 558140, 558139, 558136, 558138 },  -- Work work, Okie dokie, Be happy to, I can do that, I'll try
+    done = { 558132 }, ready = { 558137 },             -- Work complete; Ready to work
+    what = { 558143, 558135 },                         -- What you want? Something need doing?
+    pissed = { 558146 },                               -- Me not that kind of orc!
+}
+-- Warcraft III's peasant (Sound/Creature/Peasant, from wowdev's listfile): yes, yes-attack, ready, what, pissed
+local PEASANT = {
+    chop = { 558119, 558124, 558125, 558123, 558117, 558126 }, done = { 558118 }, ready = { 558118 },
+    what = { 558128, 558127, 558120 }, pissed = { 558122 },
+}
+-- Every race has its worker: orcs the peon, humans the peasant, the rest their own NPCs' voice (Voices.lua):
+-- greetings for "what" and "ready", farewells for "chop" and "done", and the lines for being clicked too often.
+-- db.voice overrides it: "peon", "peasant" or nil (your race). The grievance goes to the race's leader.
+local WORKER = {
+    Orc = { "Peon", "the Warchief", "Zug zug." }, Troll = { "Peon", "the Warchief", "Zug zug." },
+    Tauren = { "Peon", "the Warchief", "Zug zug." }, Scourge = { "Peon", "the Warchief", "Zug zug." },
+    BloodElf = { "Peon", "the Warchief", "Zug zug." },
+    Human = { "Peasant", "the King", "Job's done." }, Dwarf = { "Peasant", "King Magni", "Aye." },
+    Gnome = { "Peasant", "High Tinker Mekkatorque", "Have you tried turning it off and on again?" },
+    NightElf = { "Wisp", "High Priestess Tyrande", "Elune be with you." },
+    Draenei = { "Worker", "Prophet Velen", "The Light guides you." },
+}
+local function Race() return select(2, UnitRace("player")) or "Orc" end
+local function Lines()
+    local race = Race()
+    local v = db.voice or (race == "Orc" and "peon") or (race == "Human" and "peasant") or nil
+    if v == "peon" then return PEON end
+    if v == "peasant" then return PEASANT end
+    local npc = ns.VOICES and ns.VOICES[race .. (UnitSex("player") or 2)]
+    if not npc then return PEON end
+    return { chop = npc.go, done = npc.go, ready = npc.what, what = npc.what, pissed = npc.pissed }
+end
+local function Voice(role)
+    local ids = Lines()[role]
+    if db.sound ~= false and PlaySoundFile and ids and #ids > 0 then PlaySoundFile(ids[math.random(#ids)], "Master") end
+end
+local function Worker()
+    return unpack(WORKER[Race()] or WORKER.Orc)
 end
 
 -- Lae'zel narrates the lumberjacking: empty trees (rarely, never more than one a minute) and milestones
@@ -62,11 +95,11 @@ local MILESTONE = {
     { 0.5, "Half. Do not expect praise. Praise is for the finished." },
     { 0.75, "Three quarters. Tsk'va. ...Forget I said that." },
 }
--- the peon's grievances, kept across sessions, and how the Warchief handles them
+-- the worker's grievances, kept across sessions, and how their leader handles them (%1$s worker, %2$s leader, %3$s reply)
 local GRIEVANCE = {
-    "Peon has filed a grievance with the Warchief.",
-    "Grievance escalated. The Warchief's office has acknowledged receipt.",
-    "The Warchief has reviewed the grievance and responded: \"Zug zug.\" Case closed.",
+    "%1$s has filed a grievance with %2$s.",
+    "Grievance escalated. The office of %2$s has acknowledged receipt.",
+    "%2$s has reviewed the grievance and responded: \"%3$s\" Case closed.",
 }
 local trip = {}  -- run id -> this session's spots, empty spots and lumber, for the report card
 local quipAt, spotHave = -60, {}
@@ -78,16 +111,18 @@ local function Poke()
     if now - pokeAt > 4 then pokes = 0 end
     pokes, pokeAt = pokes + 1, now
     if pokes >= 6 then
-        Peon(PEON_PISSED)
+        Voice("pissed")
         db.grievances = (db.grievances or 0) + 1
         local g = db.grievances
-        DEFAULT_CHAT_FRAME:AddMessage("|cff66ccffWayfinder|r: " .. (GRIEVANCE[g]
-            or ("Peon has filed grievance #%d. The Warchief has stopped opening his mail."):format(g)))
+        local who, boss, reply = Worker()
+        local msg = GRIEVANCE[g] and GRIEVANCE[g]:gsub("%%1%$s", who):gsub("%%2%$s", boss):gsub("%%3%$s", reply)
+            or ("%s has filed grievance #%d. %s has stopped opening the mail."):format(who, g, boss:gsub("^%l", string.upper))
+        DEFAULT_CHAT_FRAME:AddMessage("|cff66ccffWayfinder|r: " .. msg:gsub("^%l", string.upper))
         pokes = 0
     elseif pokes >= 3 then
-        Peon(PEON_CHOP[math.random(#PEON_CHOP)])
+        Voice("chop")
     else
-        Peon(PEON_WHAT[math.random(#PEON_WHAT)])
+        Voice("what")
     end
 end
 
@@ -339,7 +374,7 @@ local function Update()
                     if seen[run.id] < run.need * m[1] and have >= run.need * m[1] then Laezel(m[2]) end
                 end
                 if have >= run.need and seen[run.id] < run.need then
-                    Peon(PEON_DONE)
+                    Voice("done")
                     -- the report card, then a haiku
                     local t = trip[run.id]
                     if t and t.spots > 0 then
@@ -350,10 +385,10 @@ local function Update()
                     Laezel("It is done. The forest will remember you. Not fondly.")
                     Print("The last log is cut. / The forest did not consent. / Work complete. Zug zug.")
                 else
-                    Peon(PEON_CHOP[math.random(#PEON_CHOP)])
+                    Voice("chop")
                 end
             elseif seen[run.id] == nil then
-                Peon(PEON_READY)  -- first look at this run since login or switching to it
+                Voice("ready")  -- first look at this run since login or switching to it
             end
             seen[run.id] = have
         else
@@ -504,7 +539,7 @@ end
 local function TrainerClosed()
     local step = Current()
     if step and trainerStep == step.id then
-        Peon(PEON_DONE)
+        Voice("done")
         Next()
     end
     trainerStep = nil
@@ -837,7 +872,7 @@ local function WindowClosed(event)
     if not (step and step.doneOn == event and run.id == "catch-up") then return end
     Next()
     if db.at["catch-up"] == "done" and queue and not queue.popped then
-        Peon(PEON_DONE)
+        Voice("done")
         db.beatPop = (db.beatPop or 0) + 1
         Print(("Caught up with %s to spare before the pop (%d times now)."):format(Clock(queue.left), db.beatPop))
     end
@@ -967,12 +1002,16 @@ SlashCmdList.WAYFINDER = function(msg)
         if run then db.at[run.id], db.fixes[run.id] = nil, nil; Print(run.name .. " restarted, fixes cleared"); Announce() end
     elseif cmd == "sound" then
         db.sound = db.sound == false
-        Print("peon sounds " .. (db.sound and "on" or "off"))
+        Print("worker sounds " .. (db.sound and "on" or "off"))
+    elseif cmd == "voice" then  -- your race's worker, then the peon, then the peasant
+        db.voice = (db.voice == nil and "peon") or (db.voice == "peon" and "peasant") or nil
+        Print("worker voice: " .. (db.voice or "your race's"))
+        Voice("what")
     elseif cmd == "hide" then db.hidden = true; frame:Hide()
     elseif cmd == "show" then db.hidden = false; frame:Show()
     else
         Print("Back, Next, and the run name switches runs. Talk to the trainer and close the window: it moves on.")
-        Print("/wf list | here (this step is where I stand) | way <x> <y> [title] | restart | sound | hide | show. Drag to move.")
+        Print("/wf list | here (this step is where I stand) | way <x> <y> [title] | restart | sound | voice | hide | show. Drag to move.")
     end
 end
 
