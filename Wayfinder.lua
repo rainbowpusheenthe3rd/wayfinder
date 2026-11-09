@@ -880,11 +880,25 @@ end
 
 -- Frame -----------------------------------------------------------------------------------------------------
 
+-- text gets a 1px outline all round rather than an offset shadow, so it reads even when faint
+local function Outline(t)
+    if not (t and t.GetFont and t.SetFont) then return end
+    local path, size = t:GetFont()
+    if path then t:SetFont(path, size, "OUTLINE") end
+    if t.SetShadowOffset then t:SetShadowOffset(0, 0) end
+end
+
+-- the red panel buttons at half strength (on top of the frame's own ALPHA): there, not shouting
+local SOFT = 0.5
 local function Button(label, width, onClick)
     local b = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
     b:SetSize(width, 20)
     b:SetText(label)
     b:SetScript("OnClick", onClick)
+    for _, r in ipairs({ b:GetRegions() }) do
+        if r.GetObjectType and r:GetObjectType() == "Texture" then r:SetAlpha(SOFT) end
+    end
+    Outline(b.GetFontString and b:GetFontString())
     return b
 end
 
@@ -932,14 +946,18 @@ local function Build()
         local t = frame:CreateFontString(nil, "OVERLAY", font)
         t:SetPoint("TOP", anchor, "BOTTOM", 0, gap)
         t:SetShadowOffset(1, -1); t:SetShadowColor(0, 0, 0, 1)
+        Outline(t)
         return t
     end
     title = Text("GameFontNormal", arrow, -2)
+    if title.SetAlpha then title:SetAlpha(SOFT) end  -- the gold title, softened like the buttons
     learn = Text("GameFontHighlightSmall", title, -2)
     info = Text("GameFontHighlightSmall", learn, -2)
     who = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     who:SetPoint("BOTTOM", arrow, "TOP", 0, 2)
     who:SetShadowOffset(1, -1); who:SetShadowColor(0, 0, 0, 1)
+    Outline(who)
+    if who.SetAlpha then who:SetAlpha(SOFT) end
 
     local back = Button("< Back", 80, Prev)
     nextButton = Button("Next", 80, Next)
