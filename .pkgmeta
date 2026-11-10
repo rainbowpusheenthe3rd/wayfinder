@@ -1,0 +1,8 @@
+package-as: Wayfinder
+
+ignore:
+  - tools
+  - tests
+  - docs
+  - README.md
+  - RESEARCH.md
