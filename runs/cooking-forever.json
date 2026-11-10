@@ -1,0 +1,27 @@
+{
+  "char": "Chalice",
+  "game": "forever",
+  "order": 29,
+  "name": "Cooking: 50 to 100",
+  "about": "Go when Cooking reaches 50 (cap 75 until you train Journeyman). Dolanaar: train Journeyman from Zarrin, then learn the Longjaw Mud Snapper recipe already in your bags. Rut'theran: buy the Rainbow Fin Albacore recipe from Nessa (Heldan Galesong in Darkshore, 37.0 56.4, sells it too). Both recipes need Cooking 50 (Wowhead classic tooltips). Then cook your 16 Albacore and 13 Longjaw. Coordinates from Warcraft Wiki; Zarrin's aren't published, so the Dolanaar step is Nyoma's spot. Fix any step with /wf here.",
+  "steps": [
+    {
+      "id": "dolanaar-zarrin",
+      "map": 1438,
+      "x": 56.0,
+      "y": 53.0,
+      "title": "Zarrin (Cooking trainer), Dolanaar",
+      "learn": "Journeyman Cooking (needs 50)",
+      "note": "Zarrin is behind the inn, across from the road, by a cooking fire; this point is Nyoma's. Then use Recipe: Longjaw Mud Snapper from your bags. Nyoma sells Mild Spices"
+    },
+    {
+      "id": "ruttheran-nessa",
+      "map": 1438,
+      "x": 54.0,
+      "y": 90.0,
+      "title": "Nessa Shadowsong (fishing supplies), Rut'theran Village",
+      "learn": "Recipe: Rainbow Fin Albacore (3s 60c)",
+      "note": "Then cook the Albacore and Longjaw at any fire until they turn green, about 100"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "char": "Chalice",
+  "game": "forever",
+  "order": 31,
+  "name": "Mine: Teldrassil",
+  "mode": "gather",
+  "about": "An ore loop through Teldrassil, only from veins and amber you've mined yourself (no guide gives spawn points for Forever's amber). It grows as you mine: rerun tools/forever_runs.py.",
+  "steps": [
+    {
+      "id": "mine-1438-1",
+      "map": 1438,
+      "x": 43.0,
+      "y": 59.2,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-2",
+      "map": 1438,
+      "x": 43.6,
+      "y": 61.9,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-3",
+      "map": 1438,
+      "x": 44.6,
+      "y": 62.7,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-4",
+      "map": 1438,
+      "x": 45.5,
+      "y": 60.2,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-5",
+      "map": 1438,
+      "x": 44.1,
+      "y": 59.3,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-6",
+      "map": 1438,
+      "x": 44.7,
+      "y": 57.2,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-7",
+      "map": 1438,
+      "x": 46.4,
+      "y": 51.2,
+      "title": "Large Chunk of Amber, Teldrassil"
+    },
+    {
+      "id": "mine-1438-8",
+      "map": 1438,
+      "x": 53.9,
+      "y": 75.3,
+      "title": "Large Chunk of Amber, Teldrassil"
+    }
+  ]
+}
