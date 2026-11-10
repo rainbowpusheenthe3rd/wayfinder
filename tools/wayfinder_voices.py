@@ -1,4 +1,4 @@
-r"""Write addon/Wayfinder/Voices.lua: a worker voice for each playable race and sex, from the game's own sound files.
+r"""Write Voices.lua: a worker voice for each playable race and sex, from the game's own sound files.
 
   python tools/wayfinder_voices.py <community-listfile.csv>
 
@@ -14,7 +14,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "addon" / "Wayfinder" / "Voices.lua"
+OUT = ROOT / "Voices.lua"
 # UnitRace's file name -> the folder name's race
 RACES = {"Human": "human", "Dwarf": "dwarf", "Gnome": "gnome", "NightElf": "nightelf", "Orc": "orc", "Troll": "troll",
          "Tauren": "tauren", "Scourge": "undead", "BloodElf": "bloodelf", "Draenei": "draenei"}

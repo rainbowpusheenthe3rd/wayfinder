@@ -1,7 +1,7 @@
 ## Interface: 120105, 16001
 ## Title: Wayfinder
 ## Notes: A see-through arrow that walks a route of waypoints (the decor-recipe trainer run by default). /wf for commands.
-## Author: the author
+## Author: rainbowpusheenthe3rd
 ## Version: 0.1.0
 ## SavedVariables: WayfinderDB
 

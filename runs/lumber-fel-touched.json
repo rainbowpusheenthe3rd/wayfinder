@@ -1,0 +1,1312 @@
+{
+ "order": 3,
+ "name": "Lumber: Fel-Touched",
+ "mode": "gather",
+ "need": 62,
+ "item": 251767,
+ "about": "62 Fel-Touched Lumber for the decor recipes. Spawn points from GatherMate2_Data; turn on Find Lumber tracking. The arrow moves on as you pass each spot, tree or not.",
+ "steps": [
+  {
+   "id": "630-1",
+   "map": 630,
+   "x": 45.7,
+   "y": 34.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-2",
+   "map": 630,
+   "x": 46.2,
+   "y": 35.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-3",
+   "map": 630,
+   "x": 45.9,
+   "y": 35.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-4",
+   "map": 630,
+   "x": 46.7,
+   "y": 35.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-5",
+   "map": 630,
+   "x": 49.2,
+   "y": 41.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-6",
+   "map": 630,
+   "x": 51.3,
+   "y": 45.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-7",
+   "map": 630,
+   "x": 54.0,
+   "y": 43.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-8",
+   "map": 630,
+   "x": 57.0,
+   "y": 39.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-9",
+   "map": 630,
+   "x": 57.8,
+   "y": 39.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-10",
+   "map": 630,
+   "x": 58.3,
+   "y": 43.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-11",
+   "map": 630,
+   "x": 58.4,
+   "y": 44.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-12",
+   "map": 630,
+   "x": 57.9,
+   "y": 47.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-13",
+   "map": 630,
+   "x": 56.8,
+   "y": 47.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-14",
+   "map": 630,
+   "x": 56.6,
+   "y": 48.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-15",
+   "map": 630,
+   "x": 57.8,
+   "y": 48.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-16",
+   "map": 630,
+   "x": 60.1,
+   "y": 50.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-17",
+   "map": 630,
+   "x": 60.6,
+   "y": 50.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-18",
+   "map": 630,
+   "x": 61.8,
+   "y": 50.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-19",
+   "map": 630,
+   "x": 60.4,
+   "y": 48.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-20",
+   "map": 630,
+   "x": 60.9,
+   "y": 47.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-21",
+   "map": 630,
+   "x": 60.9,
+   "y": 46.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-22",
+   "map": 630,
+   "x": 64.1,
+   "y": 47.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-23",
+   "map": 630,
+   "x": 63.8,
+   "y": 46.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-24",
+   "map": 630,
+   "x": 64.5,
+   "y": 45.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-25",
+   "map": 630,
+   "x": 64.8,
+   "y": 44.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-26",
+   "map": 630,
+   "x": 65.8,
+   "y": 47.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-27",
+   "map": 630,
+   "x": 66.1,
+   "y": 46.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-28",
+   "map": 630,
+   "x": 67.0,
+   "y": 45.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-29",
+   "map": 630,
+   "x": 67.4,
+   "y": 44.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-30",
+   "map": 630,
+   "x": 66.6,
+   "y": 43.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-31",
+   "map": 630,
+   "x": 66.3,
+   "y": 43.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-32",
+   "map": 630,
+   "x": 65.8,
+   "y": 43.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-33",
+   "map": 630,
+   "x": 66.3,
+   "y": 41.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-34",
+   "map": 630,
+   "x": 66.8,
+   "y": 41.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-35",
+   "map": 630,
+   "x": 66.3,
+   "y": 38.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-36",
+   "map": 630,
+   "x": 65.9,
+   "y": 36.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-37",
+   "map": 630,
+   "x": 66.5,
+   "y": 35.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-38",
+   "map": 630,
+   "x": 67.2,
+   "y": 33.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-39",
+   "map": 630,
+   "x": 66.7,
+   "y": 32.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-40",
+   "map": 630,
+   "x": 66.0,
+   "y": 33.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-41",
+   "map": 630,
+   "x": 65.5,
+   "y": 31.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-42",
+   "map": 630,
+   "x": 64.7,
+   "y": 30.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-43",
+   "map": 630,
+   "x": 64.3,
+   "y": 30.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-44",
+   "map": 630,
+   "x": 63.9,
+   "y": 32.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-45",
+   "map": 630,
+   "x": 62.9,
+   "y": 32.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-46",
+   "map": 630,
+   "x": 64.8,
+   "y": 33.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-47",
+   "map": 630,
+   "x": 65.1,
+   "y": 35.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-48",
+   "map": 630,
+   "x": 64.1,
+   "y": 35.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-49",
+   "map": 630,
+   "x": 64.6,
+   "y": 36.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-50",
+   "map": 630,
+   "x": 64.7,
+   "y": 37.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-51",
+   "map": 630,
+   "x": 64.2,
+   "y": 37.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-52",
+   "map": 630,
+   "x": 62.5,
+   "y": 40.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-53",
+   "map": 630,
+   "x": 62.0,
+   "y": 40.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-54",
+   "map": 630,
+   "x": 61.4,
+   "y": 39.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-55",
+   "map": 630,
+   "x": 60.9,
+   "y": 36.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-56",
+   "map": 630,
+   "x": 60.4,
+   "y": 35.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-57",
+   "map": 630,
+   "x": 59.7,
+   "y": 37.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-58",
+   "map": 630,
+   "x": 59.0,
+   "y": 37.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-59",
+   "map": 630,
+   "x": 58.5,
+   "y": 35.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-60",
+   "map": 630,
+   "x": 58.6,
+   "y": 32.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-61",
+   "map": 630,
+   "x": 59.9,
+   "y": 32.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-62",
+   "map": 630,
+   "x": 61.0,
+   "y": 33.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-63",
+   "map": 630,
+   "x": 61.2,
+   "y": 33.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-64",
+   "map": 630,
+   "x": 62.0,
+   "y": 33.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-65",
+   "map": 630,
+   "x": 61.6,
+   "y": 32.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-66",
+   "map": 630,
+   "x": 61.4,
+   "y": 31.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-67",
+   "map": 630,
+   "x": 61.1,
+   "y": 31.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-68",
+   "map": 630,
+   "x": 61.9,
+   "y": 30.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-69",
+   "map": 630,
+   "x": 61.5,
+   "y": 28.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-70",
+   "map": 630,
+   "x": 61.0,
+   "y": 27.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-71",
+   "map": 630,
+   "x": 61.3,
+   "y": 25.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-72",
+   "map": 630,
+   "x": 62.1,
+   "y": 25.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-73",
+   "map": 630,
+   "x": 62.3,
+   "y": 23.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-74",
+   "map": 630,
+   "x": 61.9,
+   "y": 22.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-75",
+   "map": 630,
+   "x": 58.9,
+   "y": 22.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-76",
+   "map": 630,
+   "x": 58.6,
+   "y": 24.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-77",
+   "map": 630,
+   "x": 58.2,
+   "y": 24.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-78",
+   "map": 630,
+   "x": 58.2,
+   "y": 23.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-79",
+   "map": 630,
+   "x": 56.9,
+   "y": 23.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-80",
+   "map": 630,
+   "x": 54.2,
+   "y": 23.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-81",
+   "map": 630,
+   "x": 54.4,
+   "y": 26.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-82",
+   "map": 630,
+   "x": 54.8,
+   "y": 27.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-83",
+   "map": 630,
+   "x": 55.6,
+   "y": 25.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-84",
+   "map": 630,
+   "x": 57.4,
+   "y": 26.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-85",
+   "map": 630,
+   "x": 57.8,
+   "y": 26.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-86",
+   "map": 630,
+   "x": 58.5,
+   "y": 27.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-87",
+   "map": 630,
+   "x": 59.9,
+   "y": 29.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-88",
+   "map": 630,
+   "x": 59.9,
+   "y": 30.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-89",
+   "map": 630,
+   "x": 58.9,
+   "y": 30.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-90",
+   "map": 630,
+   "x": 58.4,
+   "y": 30.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-91",
+   "map": 630,
+   "x": 58.1,
+   "y": 29.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-92",
+   "map": 630,
+   "x": 57.3,
+   "y": 29.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-93",
+   "map": 630,
+   "x": 57.4,
+   "y": 29.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-94",
+   "map": 630,
+   "x": 57.8,
+   "y": 28.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-95",
+   "map": 630,
+   "x": 56.9,
+   "y": 27.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-96",
+   "map": 630,
+   "x": 56.1,
+   "y": 27.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-97",
+   "map": 630,
+   "x": 56.1,
+   "y": 28.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-98",
+   "map": 630,
+   "x": 55.0,
+   "y": 30.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-99",
+   "map": 630,
+   "x": 55.6,
+   "y": 31.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-100",
+   "map": 630,
+   "x": 58.0,
+   "y": 32.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-101",
+   "map": 630,
+   "x": 57.7,
+   "y": 33.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-102",
+   "map": 630,
+   "x": 57.6,
+   "y": 35.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-103",
+   "map": 630,
+   "x": 56.7,
+   "y": 34.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-104",
+   "map": 630,
+   "x": 56.3,
+   "y": 33.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-105",
+   "map": 630,
+   "x": 56.4,
+   "y": 32.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-106",
+   "map": 630,
+   "x": 55.5,
+   "y": 32.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-107",
+   "map": 630,
+   "x": 53.5,
+   "y": 32.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-108",
+   "map": 630,
+   "x": 53.0,
+   "y": 31.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-109",
+   "map": 630,
+   "x": 52.1,
+   "y": 30.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-110",
+   "map": 630,
+   "x": 51.7,
+   "y": 30.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-111",
+   "map": 630,
+   "x": 51.4,
+   "y": 31.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-112",
+   "map": 630,
+   "x": 49.8,
+   "y": 30.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-113",
+   "map": 630,
+   "x": 48.3,
+   "y": 30.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-114",
+   "map": 630,
+   "x": 47.4,
+   "y": 30.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-115",
+   "map": 630,
+   "x": 47.0,
+   "y": 30.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-116",
+   "map": 630,
+   "x": 45.8,
+   "y": 28.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-117",
+   "map": 630,
+   "x": 45.9,
+   "y": 26.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-118",
+   "map": 630,
+   "x": 50.9,
+   "y": 27.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-119",
+   "map": 630,
+   "x": 51.8,
+   "y": 28.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-120",
+   "map": 630,
+   "x": 52.7,
+   "y": 28.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-121",
+   "map": 630,
+   "x": 52.5,
+   "y": 26.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-122",
+   "map": 630,
+   "x": 51.9,
+   "y": 27.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-123",
+   "map": 630,
+   "x": 51.5,
+   "y": 26.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-124",
+   "map": 630,
+   "x": 50.7,
+   "y": 26.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-125",
+   "map": 630,
+   "x": 49.9,
+   "y": 25.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-126",
+   "map": 630,
+   "x": 49.3,
+   "y": 24.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-127",
+   "map": 630,
+   "x": 50.6,
+   "y": 22.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-128",
+   "map": 630,
+   "x": 50.4,
+   "y": 21.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-129",
+   "map": 630,
+   "x": 50.6,
+   "y": 20.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-130",
+   "map": 630,
+   "x": 51.0,
+   "y": 20.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-131",
+   "map": 630,
+   "x": 52.3,
+   "y": 21.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-132",
+   "map": 630,
+   "x": 52.6,
+   "y": 22.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-133",
+   "map": 630,
+   "x": 52.8,
+   "y": 21.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-134",
+   "map": 630,
+   "x": 52.9,
+   "y": 20.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-135",
+   "map": 630,
+   "x": 52.3,
+   "y": 19.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-136",
+   "map": 630,
+   "x": 53.3,
+   "y": 17.6,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-137",
+   "map": 630,
+   "x": 52.8,
+   "y": 15.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-138",
+   "map": 630,
+   "x": 52.1,
+   "y": 13.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-139",
+   "map": 630,
+   "x": 52.9,
+   "y": 13.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-140",
+   "map": 630,
+   "x": 54.2,
+   "y": 15.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-141",
+   "map": 630,
+   "x": 54.9,
+   "y": 15.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-142",
+   "map": 630,
+   "x": 54.7,
+   "y": 13.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-143",
+   "map": 630,
+   "x": 55.3,
+   "y": 11.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-144",
+   "map": 630,
+   "x": 56.9,
+   "y": 10.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-145",
+   "map": 630,
+   "x": 57.6,
+   "y": 10.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-146",
+   "map": 630,
+   "x": 60.6,
+   "y": 12.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-147",
+   "map": 630,
+   "x": 60.4,
+   "y": 14.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-148",
+   "map": 630,
+   "x": 60.7,
+   "y": 15.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-149",
+   "map": 630,
+   "x": 60.1,
+   "y": 15.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-150",
+   "map": 630,
+   "x": 59.7,
+   "y": 16.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-151",
+   "map": 630,
+   "x": 57.0,
+   "y": 19.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-152",
+   "map": 630,
+   "x": 57.7,
+   "y": 19.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-153",
+   "map": 630,
+   "x": 58.1,
+   "y": 21.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-154",
+   "map": 630,
+   "x": 59.1,
+   "y": 21.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-155",
+   "map": 630,
+   "x": 58.9,
+   "y": 19.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-156",
+   "map": 630,
+   "x": 59.8,
+   "y": 20.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-157",
+   "map": 630,
+   "x": 60.1,
+   "y": 21.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-158",
+   "map": 630,
+   "x": 60.9,
+   "y": 19.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-159",
+   "map": 630,
+   "x": 59.8,
+   "y": 18.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-160",
+   "map": 630,
+   "x": 60.5,
+   "y": 17.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-161",
+   "map": 630,
+   "x": 62.3,
+   "y": 18.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-162",
+   "map": 630,
+   "x": 64.6,
+   "y": 17.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-163",
+   "map": 630,
+   "x": 64.8,
+   "y": 20.2,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-164",
+   "map": 630,
+   "x": 63.9,
+   "y": 20.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-165",
+   "map": 630,
+   "x": 64.6,
+   "y": 21.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-166",
+   "map": 630,
+   "x": 65.1,
+   "y": 22.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-167",
+   "map": 630,
+   "x": 66.7,
+   "y": 26.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-168",
+   "map": 630,
+   "x": 65.3,
+   "y": 25.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-169",
+   "map": 630,
+   "x": 64.0,
+   "y": 25.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-170",
+   "map": 630,
+   "x": 64.1,
+   "y": 25.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-171",
+   "map": 630,
+   "x": 63.8,
+   "y": 27.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-172",
+   "map": 630,
+   "x": 64.5,
+   "y": 27.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-173",
+   "map": 630,
+   "x": 64.4,
+   "y": 29.8,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-174",
+   "map": 630,
+   "x": 65.3,
+   "y": 29.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-175",
+   "map": 630,
+   "x": 65.5,
+   "y": 30.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-176",
+   "map": 630,
+   "x": 65.9,
+   "y": 30.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-177",
+   "map": 630,
+   "x": 68.2,
+   "y": 29.9,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-178",
+   "map": 630,
+   "x": 68.7,
+   "y": 29.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-179",
+   "map": 630,
+   "x": 68.3,
+   "y": 29.1,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-180",
+   "map": 630,
+   "x": 68.3,
+   "y": 28.3,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-181",
+   "map": 630,
+   "x": 68.8,
+   "y": 26.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-182",
+   "map": 630,
+   "x": 68.5,
+   "y": 24.4,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-183",
+   "map": 630,
+   "x": 68.0,
+   "y": 23.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-184",
+   "map": 630,
+   "x": 67.0,
+   "y": 24.5,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-185",
+   "map": 630,
+   "x": 66.4,
+   "y": 23.7,
+   "title": "Fel-Touched Lumber, Azsuna"
+  },
+  {
+   "id": "630-186",
+   "map": 630,
+   "x": 65.9,
+   "y": 20.0,
+   "title": "Fel-Touched Lumber, Azsuna"
+  }
+ ]
+}

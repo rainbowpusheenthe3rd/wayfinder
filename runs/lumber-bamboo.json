@@ -1,0 +1,1060 @@
+{
+ "order": 4,
+ "name": "Lumber: Bamboo",
+ "mode": "gather",
+ "need": 50,
+ "item": 251763,
+ "about": "50 Bamboo Lumber for the decor recipes. Spawn points from GatherMate2_Data; turn on Find Lumber tracking. The arrow moves on as you pass each spot, tree or not.",
+ "steps": [
+  {
+   "id": "371-1",
+   "map": 371,
+   "x": 40.0,
+   "y": 41.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-2",
+   "map": 371,
+   "x": 41.4,
+   "y": 40.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-3",
+   "map": 371,
+   "x": 40.9,
+   "y": 40.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-4",
+   "map": 371,
+   "x": 40.1,
+   "y": 39.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-5",
+   "map": 371,
+   "x": 40.2,
+   "y": 38.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-6",
+   "map": 371,
+   "x": 40.7,
+   "y": 37.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-7",
+   "map": 371,
+   "x": 41.5,
+   "y": 36.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-8",
+   "map": 371,
+   "x": 42.1,
+   "y": 37.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-9",
+   "map": 371,
+   "x": 43.2,
+   "y": 39.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-10",
+   "map": 371,
+   "x": 45.4,
+   "y": 40.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-11",
+   "map": 371,
+   "x": 46.0,
+   "y": 40.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-12",
+   "map": 371,
+   "x": 46.1,
+   "y": 41.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-13",
+   "map": 371,
+   "x": 46.5,
+   "y": 41.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-14",
+   "map": 371,
+   "x": 47.2,
+   "y": 40.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-15",
+   "map": 371,
+   "x": 46.4,
+   "y": 39.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-16",
+   "map": 371,
+   "x": 47.3,
+   "y": 38.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-17",
+   "map": 371,
+   "x": 46.2,
+   "y": 38.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-18",
+   "map": 371,
+   "x": 44.6,
+   "y": 38.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-19",
+   "map": 371,
+   "x": 44.5,
+   "y": 37.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-20",
+   "map": 371,
+   "x": 43.7,
+   "y": 38.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-21",
+   "map": 371,
+   "x": 43.7,
+   "y": 37.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-22",
+   "map": 371,
+   "x": 43.0,
+   "y": 37.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-23",
+   "map": 371,
+   "x": 42.4,
+   "y": 36.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-24",
+   "map": 371,
+   "x": 43.0,
+   "y": 35.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-25",
+   "map": 371,
+   "x": 44.9,
+   "y": 36.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-26",
+   "map": 371,
+   "x": 46.2,
+   "y": 35.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-27",
+   "map": 371,
+   "x": 45.8,
+   "y": 32.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-28",
+   "map": 371,
+   "x": 45.1,
+   "y": 32.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-29",
+   "map": 371,
+   "x": 45.9,
+   "y": 31.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-30",
+   "map": 371,
+   "x": 45.2,
+   "y": 30.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-31",
+   "map": 371,
+   "x": 45.7,
+   "y": 29.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-32",
+   "map": 371,
+   "x": 46.9,
+   "y": 28.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-33",
+   "map": 371,
+   "x": 47.4,
+   "y": 28.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-34",
+   "map": 371,
+   "x": 49.0,
+   "y": 31.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-35",
+   "map": 371,
+   "x": 49.6,
+   "y": 31.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-36",
+   "map": 371,
+   "x": 49.4,
+   "y": 32.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-37",
+   "map": 371,
+   "x": 48.7,
+   "y": 32.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-38",
+   "map": 371,
+   "x": 49.4,
+   "y": 33.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-39",
+   "map": 371,
+   "x": 50.3,
+   "y": 33.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-40",
+   "map": 371,
+   "x": 52.1,
+   "y": 34.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-41",
+   "map": 371,
+   "x": 53.4,
+   "y": 34.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-42",
+   "map": 371,
+   "x": 53.8,
+   "y": 34.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-43",
+   "map": 371,
+   "x": 55.4,
+   "y": 34.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-44",
+   "map": 371,
+   "x": 54.2,
+   "y": 33.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-45",
+   "map": 371,
+   "x": 53.1,
+   "y": 31.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-46",
+   "map": 371,
+   "x": 51.9,
+   "y": 33.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-47",
+   "map": 371,
+   "x": 52.3,
+   "y": 31.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-48",
+   "map": 371,
+   "x": 51.7,
+   "y": 30.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-49",
+   "map": 371,
+   "x": 51.8,
+   "y": 29.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-50",
+   "map": 371,
+   "x": 51.3,
+   "y": 29.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-51",
+   "map": 371,
+   "x": 49.9,
+   "y": 28.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-52",
+   "map": 371,
+   "x": 49.1,
+   "y": 27.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-53",
+   "map": 371,
+   "x": 49.0,
+   "y": 26.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-54",
+   "map": 371,
+   "x": 49.5,
+   "y": 26.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-55",
+   "map": 371,
+   "x": 50.0,
+   "y": 25.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-56",
+   "map": 371,
+   "x": 50.1,
+   "y": 23.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-57",
+   "map": 371,
+   "x": 53.1,
+   "y": 23.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-58",
+   "map": 371,
+   "x": 54.0,
+   "y": 22.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-59",
+   "map": 371,
+   "x": 54.4,
+   "y": 23.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-60",
+   "map": 371,
+   "x": 54.9,
+   "y": 24.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-61",
+   "map": 371,
+   "x": 55.1,
+   "y": 22.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-62",
+   "map": 371,
+   "x": 56.5,
+   "y": 24.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-63",
+   "map": 371,
+   "x": 55.3,
+   "y": 25.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-64",
+   "map": 371,
+   "x": 53.9,
+   "y": 25.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-65",
+   "map": 371,
+   "x": 53.0,
+   "y": 25.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-66",
+   "map": 371,
+   "x": 53.2,
+   "y": 27.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-67",
+   "map": 371,
+   "x": 54.4,
+   "y": 25.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-68",
+   "map": 371,
+   "x": 54.9,
+   "y": 26.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-69",
+   "map": 371,
+   "x": 55.8,
+   "y": 28.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-70",
+   "map": 371,
+   "x": 57.1,
+   "y": 29.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-71",
+   "map": 371,
+   "x": 57.0,
+   "y": 30.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-72",
+   "map": 371,
+   "x": 56.7,
+   "y": 32.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-73",
+   "map": 371,
+   "x": 56.9,
+   "y": 34.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-74",
+   "map": 371,
+   "x": 57.2,
+   "y": 35.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-75",
+   "map": 371,
+   "x": 57.9,
+   "y": 36.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-76",
+   "map": 371,
+   "x": 58.0,
+   "y": 37.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-77",
+   "map": 371,
+   "x": 56.9,
+   "y": 38.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-78",
+   "map": 371,
+   "x": 56.4,
+   "y": 38.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-79",
+   "map": 371,
+   "x": 57.3,
+   "y": 41.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-80",
+   "map": 371,
+   "x": 56.6,
+   "y": 41.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-81",
+   "map": 371,
+   "x": 56.6,
+   "y": 42.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-82",
+   "map": 371,
+   "x": 56.6,
+   "y": 43.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-83",
+   "map": 371,
+   "x": 56.1,
+   "y": 43.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-84",
+   "map": 371,
+   "x": 55.9,
+   "y": 42.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-85",
+   "map": 371,
+   "x": 55.2,
+   "y": 42.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-86",
+   "map": 371,
+   "x": 55.3,
+   "y": 41.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-87",
+   "map": 371,
+   "x": 55.2,
+   "y": 39.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-88",
+   "map": 371,
+   "x": 54.2,
+   "y": 38.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-89",
+   "map": 371,
+   "x": 54.5,
+   "y": 38.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-90",
+   "map": 371,
+   "x": 54.7,
+   "y": 36.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-91",
+   "map": 371,
+   "x": 54.0,
+   "y": 37.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-92",
+   "map": 371,
+   "x": 52.2,
+   "y": 37.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-93",
+   "map": 371,
+   "x": 51.8,
+   "y": 38.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-94",
+   "map": 371,
+   "x": 51.3,
+   "y": 38.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-95",
+   "map": 371,
+   "x": 51.2,
+   "y": 38.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-96",
+   "map": 371,
+   "x": 49.9,
+   "y": 38.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-97",
+   "map": 371,
+   "x": 48.5,
+   "y": 39.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-98",
+   "map": 371,
+   "x": 48.4,
+   "y": 40.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-99",
+   "map": 371,
+   "x": 49.4,
+   "y": 40.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-100",
+   "map": 371,
+   "x": 50.2,
+   "y": 40.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-101",
+   "map": 371,
+   "x": 50.9,
+   "y": 42.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-102",
+   "map": 371,
+   "x": 50.6,
+   "y": 43.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-103",
+   "map": 371,
+   "x": 52.2,
+   "y": 44.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-104",
+   "map": 371,
+   "x": 51.7,
+   "y": 41.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-105",
+   "map": 371,
+   "x": 52.5,
+   "y": 40.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-106",
+   "map": 371,
+   "x": 53.5,
+   "y": 42.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-107",
+   "map": 371,
+   "x": 52.9,
+   "y": 43.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-108",
+   "map": 371,
+   "x": 53.2,
+   "y": 43.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-109",
+   "map": 371,
+   "x": 53.6,
+   "y": 44.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-110",
+   "map": 371,
+   "x": 53.7,
+   "y": 43.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-111",
+   "map": 371,
+   "x": 54.2,
+   "y": 43.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-112",
+   "map": 371,
+   "x": 54.6,
+   "y": 43.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-113",
+   "map": 371,
+   "x": 55.7,
+   "y": 44.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-114",
+   "map": 371,
+   "x": 57.7,
+   "y": 47.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-115",
+   "map": 371,
+   "x": 61.1,
+   "y": 56.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-116",
+   "map": 371,
+   "x": 57.7,
+   "y": 49.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-117",
+   "map": 371,
+   "x": 57.4,
+   "y": 48.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-118",
+   "map": 371,
+   "x": 57.1,
+   "y": 48.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-119",
+   "map": 371,
+   "x": 56.8,
+   "y": 47.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-120",
+   "map": 371,
+   "x": 56.3,
+   "y": 46.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-121",
+   "map": 371,
+   "x": 54.8,
+   "y": 45.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-122",
+   "map": 371,
+   "x": 54.0,
+   "y": 46.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-123",
+   "map": 371,
+   "x": 54.4,
+   "y": 46.6,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-124",
+   "map": 371,
+   "x": 54.3,
+   "y": 47.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-125",
+   "map": 371,
+   "x": 54.4,
+   "y": 49.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-126",
+   "map": 371,
+   "x": 53.6,
+   "y": 49.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-127",
+   "map": 371,
+   "x": 53.2,
+   "y": 48.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-128",
+   "map": 371,
+   "x": 52.8,
+   "y": 47.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-129",
+   "map": 371,
+   "x": 53.2,
+   "y": 47.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-130",
+   "map": 371,
+   "x": 52.6,
+   "y": 46.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-131",
+   "map": 371,
+   "x": 52.5,
+   "y": 45.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-132",
+   "map": 371,
+   "x": 52.1,
+   "y": 45.1,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-133",
+   "map": 371,
+   "x": 51.3,
+   "y": 46.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-134",
+   "map": 371,
+   "x": 50.4,
+   "y": 44.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-135",
+   "map": 371,
+   "x": 50.3,
+   "y": 45.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-136",
+   "map": 371,
+   "x": 50.0,
+   "y": 47.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-137",
+   "map": 371,
+   "x": 49.2,
+   "y": 48.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-138",
+   "map": 371,
+   "x": 49.7,
+   "y": 48.8,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-139",
+   "map": 371,
+   "x": 52.7,
+   "y": 49.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-140",
+   "map": 371,
+   "x": 52.3,
+   "y": 51.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-141",
+   "map": 371,
+   "x": 53.0,
+   "y": 52.2,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-142",
+   "map": 371,
+   "x": 52.7,
+   "y": 54.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-143",
+   "map": 371,
+   "x": 52.1,
+   "y": 53.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-144",
+   "map": 371,
+   "x": 50.6,
+   "y": 55.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-145",
+   "map": 371,
+   "x": 49.8,
+   "y": 53.3,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-146",
+   "map": 371,
+   "x": 49.5,
+   "y": 50.7,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-147",
+   "map": 371,
+   "x": 47.6,
+   "y": 49.0,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-148",
+   "map": 371,
+   "x": 47.9,
+   "y": 50.5,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-149",
+   "map": 371,
+   "x": 48.0,
+   "y": 52.4,
+   "title": "Bamboo Lumber, The Jade Forest"
+  },
+  {
+   "id": "371-150",
+   "map": 371,
+   "x": 43.5,
+   "y": 55.9,
+   "title": "Bamboo Lumber, The Jade Forest"
+  }
+ ]
+}

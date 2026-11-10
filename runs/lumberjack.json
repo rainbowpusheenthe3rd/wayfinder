@@ -1,0 +1,27 @@
+{
+  "order": 50,
+  "name": "Lumberjack (if you can't chop)",
+  "about": "The Neighbourhood lumberjack's quest Lumber For You unlocks chopping. Pick this run from the list if a character can't chop. Coordinates from Warcraft Wiki; uiMapIDs from the Plumber addon.",
+  "steps": [
+    {
+      "id": "lestia",
+      "map": 2352,
+      "x": 53.97,
+      "y": 39.49,
+      "faction": "Alliance",
+      "title": "Lestia Goldenstrike, Founder's Point",
+      "learn": "Quest: Lumber For You (talk to her; it teaches Find Lumber)",
+      "note": "Town Center, by the General Contractor. Get there with the housing dashboard's teleport to your neighbourhood"
+    },
+    {
+      "id": "xizro",
+      "map": 2351,
+      "x": 53.6,
+      "y": 56.74,
+      "faction": "Horde",
+      "title": "Xiz'ro, Razorwind Shores",
+      "learn": "Quest: Lumber For You (talk to him; it teaches Find Lumber)",
+      "note": "The Common, by the General Contractor. Get there with the housing dashboard's teleport to your neighbourhood"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+ "order": 8,
+ "name": "Lumber: Olemba",
+ "mode": "gather",
+ "need": 20,
+ "item": 242691,
+ "about": "20 Olemba Lumber for the decor recipes. Spawn points from GatherMate2_Data; turn on Find Lumber tracking. The arrow moves on as you pass each spot, tree or not.",
+ "steps": [
+  {
+   "id": "102-1",
+   "map": 102,
+   "x": 72.4,
+   "y": 54.1,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-2",
+   "map": 102,
+   "x": 72.9,
+   "y": 52.5,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-3",
+   "map": 102,
+   "x": 74.4,
+   "y": 50.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-4",
+   "map": 102,
+   "x": 74.7,
+   "y": 49.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-5",
+   "map": 102,
+   "x": 74.6,
+   "y": 48.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-6",
+   "map": 102,
+   "x": 75.4,
+   "y": 48.0,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-7",
+   "map": 102,
+   "x": 75.5,
+   "y": 49.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-8",
+   "map": 102,
+   "x": 76.8,
+   "y": 48.9,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-9",
+   "map": 102,
+   "x": 77.3,
+   "y": 51.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-10",
+   "map": 102,
+   "x": 74.9,
+   "y": 54.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-11",
+   "map": 102,
+   "x": 73.5,
+   "y": 55.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-12",
+   "map": 102,
+   "x": 74.7,
+   "y": 58.1,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-13",
+   "map": 102,
+   "x": 74.6,
+   "y": 59.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-14",
+   "map": 102,
+   "x": 74.1,
+   "y": 63.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-15",
+   "map": 102,
+   "x": 76.0,
+   "y": 57.5,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-16",
+   "map": 102,
+   "x": 77.0,
+   "y": 58.1,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-17",
+   "map": 102,
+   "x": 77.4,
+   "y": 60.1,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-18",
+   "map": 102,
+   "x": 78.2,
+   "y": 59.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-19",
+   "map": 102,
+   "x": 78.8,
+   "y": 60.3,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-20",
+   "map": 102,
+   "x": 79.3,
+   "y": 59.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-21",
+   "map": 102,
+   "x": 79.1,
+   "y": 57.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-22",
+   "map": 102,
+   "x": 78.2,
+   "y": 57.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-23",
+   "map": 102,
+   "x": 77.3,
+   "y": 54.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-24",
+   "map": 102,
+   "x": 77.9,
+   "y": 54.0,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-25",
+   "map": 102,
+   "x": 78.2,
+   "y": 52.9,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-26",
+   "map": 102,
+   "x": 79.5,
+   "y": 54.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-27",
+   "map": 102,
+   "x": 80.5,
+   "y": 55.0,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-28",
+   "map": 102,
+   "x": 80.0,
+   "y": 56.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-29",
+   "map": 102,
+   "x": 80.8,
+   "y": 58.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-30",
+   "map": 102,
+   "x": 81.0,
+   "y": 59.9,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-31",
+   "map": 102,
+   "x": 80.4,
+   "y": 60.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-32",
+   "map": 102,
+   "x": 80.0,
+   "y": 61.5,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-33",
+   "map": 102,
+   "x": 80.5,
+   "y": 61.5,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-34",
+   "map": 102,
+   "x": 81.0,
+   "y": 62.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-35",
+   "map": 102,
+   "x": 81.0,
+   "y": 63.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-36",
+   "map": 102,
+   "x": 81.2,
+   "y": 65.3,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-37",
+   "map": 102,
+   "x": 80.7,
+   "y": 66.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-38",
+   "map": 102,
+   "x": 80.9,
+   "y": 68.0,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-39",
+   "map": 102,
+   "x": 84.0,
+   "y": 57.3,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-40",
+   "map": 102,
+   "x": 83.5,
+   "y": 57.5,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-41",
+   "map": 102,
+   "x": 82.2,
+   "y": 56.7,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-42",
+   "map": 102,
+   "x": 82.3,
+   "y": 55.1,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-43",
+   "map": 102,
+   "x": 82.7,
+   "y": 54.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-44",
+   "map": 102,
+   "x": 81.5,
+   "y": 52.9,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-45",
+   "map": 102,
+   "x": 81.0,
+   "y": 53.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-46",
+   "map": 102,
+   "x": 79.9,
+   "y": 52.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-47",
+   "map": 102,
+   "x": 78.8,
+   "y": 46.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-48",
+   "map": 102,
+   "x": 79.3,
+   "y": 45.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-49",
+   "map": 102,
+   "x": 79.6,
+   "y": 45.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-50",
+   "map": 102,
+   "x": 80.9,
+   "y": 46.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-51",
+   "map": 102,
+   "x": 81.3,
+   "y": 49.0,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-52",
+   "map": 102,
+   "x": 83.3,
+   "y": 51.6,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-53",
+   "map": 102,
+   "x": 83.7,
+   "y": 51.3,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-54",
+   "map": 102,
+   "x": 84.0,
+   "y": 48.8,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-55",
+   "map": 102,
+   "x": 84.9,
+   "y": 49.1,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-56",
+   "map": 102,
+   "x": 84.5,
+   "y": 51.4,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-57",
+   "map": 102,
+   "x": 85.9,
+   "y": 51.4,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-58",
+   "map": 102,
+   "x": 86.4,
+   "y": 50.4,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-59",
+   "map": 102,
+   "x": 86.6,
+   "y": 55.0,
+   "title": "Olemba Lumber, Zangarmarsh"
+  },
+  {
+   "id": "102-60",
+   "map": 102,
+   "x": 86.5,
+   "y": 56.2,
+   "title": "Olemba Lumber, Zangarmarsh"
+  }
+ ]
+}
