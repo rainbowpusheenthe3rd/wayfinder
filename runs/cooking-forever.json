@@ -2,9 +2,17 @@
   "char": "Chalice",
   "game": "forever",
   "order": 29,
-  "name": "Cooking: 50 to 100",
-  "about": "Go when Cooking reaches 50 (cap 75 until you train Journeyman). Dolanaar: train Journeyman from Zarrin, then learn the Longjaw Mud Snapper recipe already in your bags. Rut'theran: buy the Rainbow Fin Albacore recipe from Nessa (Heldan Galesong in Darkshore, 37.0 56.4, sells it too). Both recipes need Cooking 50 (Wowhead classic tooltips). Then cook your 16 Albacore and 13 Longjaw. Coordinates from Warcraft Wiki; Zarrin's aren't published, so the Dolanaar step is Nyoma's spot. Fix any step with /wf here.",
+  "name": "Cooking: to 100",
+  "about": "Wellspring Lake first: fish about 12 Brilliant Smallfish (lakes give smallfish; mackerel is a sea fish, off the coast) and cook them as you go. Smallfish gives a point every cook to 45 and most cooks to 65 (Warcraft Wiki: 1/45/65/85), so it takes you past 50. Dolanaar: train Journeyman from Zarrin, then learn the Longjaw Mud Snapper recipe already in your bags. Rut'theran: buy the Rainbow Fin Albacore recipe from Nessa (Heldan Galesong in Darkshore, 37.0 56.4, sells it too). Both recipes need Cooking 50 (Wowhead classic tooltips). Then cook your 16 Albacore and 13 Longjaw. Coordinates from Warcraft Wiki; Zarrin's aren't published, so the Dolanaar step is Nyoma's spot. Fix any step with /wf here.",
   "steps": [
+    {
+      "id": "wellspring-fish",
+      "map": 1438,
+      "x": 42.9,
+      "y": 41.8,
+      "title": "Fish Wellspring Lake to Cooking 50",
+      "note": "About 12 Brilliant Smallfish; cook as you go (campfire kit: Simple Wood + Flint and Tinder). Next when you hit 50"
+    },
     {
       "id": "dolanaar-zarrin",
       "map": 1438,
