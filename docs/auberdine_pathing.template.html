@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auberdine loop pathing</title>
+<style>
+:root{--bg:#f5f3ee;--card:#fffdf8;--ink:#1f2421;--muted:#5f6a63;--line:#d8d4c8;--grid:#e6e2d7;--route:#3d5a80;
+  --cut:#c0392b;--new:#1e8449;--home:#7a4b2a;--chip:#ece8dd}
+@media (prefers-color-scheme:dark){:root{--bg:#121614;--card:#1b201d;--ink:#e8ece9;--muted:#9aa59e;--line:#2f3732;
+  --grid:#232a26;--route:#8fb3e0;--cut:#ff7b6b;--new:#5fd38d;--home:#e0b48a;--chip:#252c28}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.5rem;margin:0 0 2px}
+.lead{color:var(--muted);margin:0 0 14px}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+canvas{width:100%;display:block;border-radius:6px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+button{font:inherit;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:6px;padding:4px 10px;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--route);outline-offset:2px}
+input[type=range]{flex:1;min-width:160px}
+.stage{font-weight:600;margin:0 0 4px}
+.stat{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;font-variant-numeric:tabular-nums}
+.stat span:first-child{color:var(--muted)}
+.legend{display:grid;grid-template-columns:auto 1fr;gap:4px 8px;align-items:center;margin-top:10px;font-size:.9rem}
+.small{color:var(--muted);font-size:.85rem}
+#tip{position:fixed;pointer-events:none;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:.85rem;display:none;z-index:5}
+h2{font-size:1.05rem;margin:22px 0 6px}
+</style>
+</head>
+<body>
+<main>
+<h1>Auberdine loop: how the route was found</h1>
+<p class="lead">Wayfinder's gathering loop out of Auberdine through Darkshore and back, worked out step by step: first the spots, then nearest neighbour builds a loop, then 2-opt uncrosses it until no swap helps.</p>
+<div class="wrap">
+  <div class="card">
+    <canvas id="map" width="1400" height="1100" aria-label="Map of the Auberdine loop being built"></canvas>
+    <div class="controls">
+      <button id="play" aria-label="Play or pause">Play</button>
+      <button id="back" aria-label="Step back">&#9664;</button>
+      <button id="fwd" aria-label="Step forward">&#9654;</button>
+      <input id="scrub" type="range" min="0" value="0" aria-label="Step through the calculation">
+      <button id="speed" aria-label="Speed">1x</button>
+    </div>
+    <canvas id="len" width="1400" height="160" aria-label="Loop length at each step" style="margin-top:10px"></canvas>
+  </div>
+  <div class="card">
+    <p class="stage" id="stage"></p>
+    <p id="what"></p>
+    <div class="stat"><span>Step</span><span id="s-step"></span></div>
+    <div class="stat"><span>Loop length</span><span id="s-len"></span></div>
+    <div class="stat"><span>Nearest-neighbour loop</span><span id="s-nn"></span></div>
+    <div class="stat"><span>After 2-opt</span><span id="s-final"></span></div>
+    <div class="legend" id="legend"></div>
+    <p class="small">Distances are in map-%, with across stretched ×<span id="aspect"></span> because the map is wider than tall in real distance. Hover a spot for its name.</p>
+  </div>
+</div>
+<h2>The method</h2>
+<p><b>Spots.</b> Darkshore's herbs and copper you can pick and still learn from (herbalism 88, mining 15): your own picks first, then classic spawn points; any two within <span id="merge"></span> map-% count as one. The 60 nearest the Auberdine mailbox make the loop.</p>
+<p><b>Nearest neighbour.</b> From the mailbox, always walk to the closest spot not yet visited; when none are left, walk home. Fast, but greedy: late in the loop it leaves long legs and crossings.</p>
+<p><b>2-opt.</b> Take any two legs, A→B and C→D. If A→C plus B→D is shorter, reverse everything between B and C: the two legs swap for two shorter ones, which is what uncrossing a crossing does. Keep going until no pair helps. Red dashes are the legs taken out, green the legs put in.</p>
+</main>
+<div id="tip"></div>
+<script>
+const T = __TRACE__;
+const KIND = {   // shape and colour per spot kind; shape carries it too, so colour is never the only cue
+  "Peacebloom": {c: "#d4a017", s: "circle"}, "Silverleaf": {c: "#7f8c8d", s: "circle"},
+  "Earthroot": {c: "#8e5b3a", s: "square"}, "Mageroyal": {c: "#8e44ad", s: "triangle"},
+  "Briarthorn": {c: "#c0392b", s: "triangle"}, "Copper Vein": {c: "#d35400", s: "diamond"},
+};
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const P = T.points, H = {x: T.home[0], y: T.home[1]};
+document.getElementById("aspect").textContent = T.aspect;
+document.getElementById("merge").textContent = T.merge;
+document.getElementById("s-nn").textContent = T.nn_length.toFixed(1) + " map-%";
+document.getElementById("s-final").textContent = T.final_length.toFixed(1) + " map-%";
+
+// frames: the spots; each nearest-neighbour leg; each 2-opt swap shown, then applied; the finished loop
+const nnOrder = T.nn.map(s => s.to);
+const frames = [{type: "spots"}];
+for (let k = 1; k <= nnOrder.length + 1; k++) frames.push({type: "nn", k});
+let prev = nnOrder;
+T.swaps.forEach((s, n) => {
+  frames.push({type: "show", s, n, order: prev});
+  frames.push({type: "apply", s, n, order: s.order});
+  prev = s.order;
+});
+frames.push({type: "final", order: prev});
+
+const pt = i => i < 0 ? H : P[i];
+const dist = (a, b) => Math.hypot((a.x - b.x) * T.aspect, a.y - b.y);
+const loopLen = order => { const p = [H, ...order.map(pt), H]; let L = 0; for (let i = 1; i < p.length; i++) L += dist(p[i - 1], p[i]); return L; };
+const lengths = frames.map(f => f.type === "spots" ? 0 : f.type === "nn" ? (() => { const o = nnOrder.slice(0, f.k); const p = [H, ...o.map(pt)]; if (f.k > nnOrder.length) p.push(H); let L = 0; for (let i = 1; i < p.length; i++) L += dist(p[i - 1], p[i]); return L; })() : loopLen(f.order));
+
+// map projection: the spots' box plus a margin, x stretched by the aspect
+const xs = P.map(p => p.x).concat(H.x), ys = P.map(p => p.y).concat(H.y);
+const box = {x0: Math.min(...xs) - 1.5, x1: Math.max(...xs) + 1.5, y0: Math.min(...ys) - 1.5, y1: Math.max(...ys) + 1.5};
+const cv = document.getElementById("map"), g = cv.getContext("2d");
+const W = cv.width, Hh = cv.height;
+const sc = Math.min(W / ((box.x1 - box.x0) * T.aspect), Hh / (box.y1 - box.y0));
+const ox = (W - (box.x1 - box.x0) * T.aspect * sc) / 2, oy = (Hh - (box.y1 - box.y0) * sc) / 2;
+const X = p => ox + (p.x - box.x0) * T.aspect * sc, Y = p => oy + (p.y - box.y0) * sc;
+
+function shape(p, k, r) {
+  const x = X(p), y = Y(p);
+  g.beginPath();
+  if (k.s === "circle") g.arc(x, y, r, 0, 7);
+  else if (k.s === "square") g.rect(x - r * .85, y - r * .85, r * 1.7, r * 1.7);
+  else if (k.s === "triangle") { g.moveTo(x, y - r * 1.15); g.lineTo(x + r, y + r * .7); g.lineTo(x - r, y + r * .7); g.closePath(); }
+  else { g.moveTo(x, y - r * 1.2); g.lineTo(x + r, y); g.lineTo(x, y + r * 1.2); g.lineTo(x - r, y); g.closePath(); }
+  g.fillStyle = k.c; g.fill();
+  g.lineWidth = 2; g.strokeStyle = css("--card"); g.stroke();
+}
+function leg(a, b, colour, w, dash) {
+  g.beginPath(); g.setLineDash(dash || []); g.moveTo(X(a), Y(a)); g.lineTo(X(b), Y(b));
+  g.strokeStyle = colour; g.lineWidth = w; g.stroke(); g.setLineDash([]);
+}
+function draw(f) {
+  g.clearRect(0, 0, W, Hh);
+  g.strokeStyle = css("--grid"); g.lineWidth = 1; g.fillStyle = css("--muted"); g.font = "22px system-ui";
+  for (let v = Math.ceil(box.x0 / 5) * 5; v <= box.x1; v += 5) { const x = X({x: v, y: 0}); g.beginPath(); g.moveTo(x, 0); g.lineTo(x, Hh); g.stroke(); g.fillText(v, x + 4, Hh - 8); }
+  for (let v = Math.ceil(box.y0 / 5) * 5; v <= box.y1; v += 5) { const y = Y({x: 0, y: v}); g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); g.fillText(v, 6, y - 4); }
+  const route = css("--route");
+  let path = null;
+  if (f.type === "nn") { path = [H, ...nnOrder.slice(0, f.k).map(pt)]; if (f.k > nnOrder.length) path.push(H); }
+  else if (f.order) path = [H, ...f.order.map(pt), H];
+  if (path) for (let i = 1; i < path.length; i++) leg(path[i - 1], path[i], route, 3);
+  if (f.type === "show" || f.type === "apply") {
+    const o = f.type === "show" ? f.order : (frames[frames.indexOf(f) - 1].order);
+    const p = [H, ...o.map(pt), H], i = f.s.i, j = f.s.j;
+    if (f.type === "show") { leg(p[i - 1], p[i], css("--cut"), 6, [14, 10]); leg(p[j], p[j + 1], css("--cut"), 6, [14, 10]); }
+    leg(p[i - 1], p[j], css("--new"), 6); leg(p[i], p[j + 1], css("--new"), 6);
+  }
+  if (f.type === "nn" && f.k <= nnOrder.length) { const cur = pt(nnOrder[f.k - 1]); g.beginPath(); g.arc(X(cur), Y(cur), 18, 0, 7); g.strokeStyle = route; g.lineWidth = 3; g.stroke(); }
+  P.forEach(p => { shape(p, KIND[p.name], 10); if (p.source === "own") { g.beginPath(); g.arc(X(p), Y(p), 16, 0, 7); g.strokeStyle = css("--ink"); g.lineWidth = 2; g.stroke(); } });
+  if (f.type === "final") { g.fillStyle = css("--ink"); g.font = "bold 18px system-ui"; f.order.forEach((k, n) => g.fillText(n + 1, X(P[k]) + 12, Y(P[k]) - 10)); }
+  const hx = X(H), hy = Y(H);   // the mailbox: a small house
+  g.beginPath(); g.moveTo(hx - 14, hy); g.lineTo(hx, hy - 16); g.lineTo(hx + 14, hy); g.lineTo(hx + 14, hy + 14); g.lineTo(hx - 14, hy + 14); g.closePath();
+  g.fillStyle = css("--home"); g.fill(); g.lineWidth = 3; g.strokeStyle = css("--card"); g.stroke();
+  g.fillStyle = css("--ink"); g.font = "bold 24px system-ui"; g.fillText("Auberdine", hx + 20, hy + 8);
+}
+
+const lc = document.getElementById("len"), lg = lc.getContext("2d");
+function drawLen(n) {
+  lg.clearRect(0, 0, lc.width, lc.height);
+  const max = Math.max(...lengths), w = lc.width / (frames.length - 1);
+  lg.beginPath(); lengths.forEach((L, i) => { const x = i * w, y = lc.height - 20 - L / max * (lc.height - 40); i ? lg.lineTo(x, y) : lg.moveTo(x, y); });
+  lg.strokeStyle = css("--route"); lg.lineWidth = 3; lg.stroke();
+  lg.beginPath(); lg.moveTo(n * w, 0); lg.lineTo(n * w, lc.height); lg.strokeStyle = css("--muted"); lg.lineWidth = 2; lg.stroke();
+  lg.fillStyle = css("--muted"); lg.font = "22px system-ui"; lg.fillText("loop length, step by step", 10, 26);
+}
+
+const legend = document.getElementById("legend");
+Object.entries(KIND).forEach(([name, k]) => {
+  const c = document.createElement("canvas"); c.width = 28; c.height = 28; c.style.width = "14px";
+  const sg = c.getContext("2d"), r = 9; sg.fillStyle = k.c; sg.beginPath();
+  if (k.s === "circle") sg.arc(14, 14, r, 0, 7); else if (k.s === "square") sg.rect(6, 6, 16, 16);
+  else if (k.s === "triangle") { sg.moveTo(14, 3); sg.lineTo(24, 22); sg.lineTo(4, 22); sg.closePath(); }
+  else { sg.moveTo(14, 2); sg.lineTo(25, 14); sg.lineTo(14, 26); sg.lineTo(3, 14); sg.closePath(); }
+  sg.fill();
+  const n = P.filter(p => p.name === name).length;
+  const l = document.createElement("span"); l.textContent = `${name} (${n})`;
+  legend.append(c, l);
+});
+const own = document.createElement("span"); own.textContent = "○"; const ol = document.createElement("span");
+ol.textContent = `ringed: where you've gathered yourself (${P.filter(p => p.source === "own").length})`; legend.append(own, ol);
+
+const scrub = document.getElementById("scrub"); scrub.max = frames.length - 1;
+let i = 0, playing = false, speed = 1, timer = null;
+function words(f) {
+  if (f.type === "spots") return ["The spots", `${P.length} herb and copper spots near Auberdine. Next: nearest neighbour.`];
+  if (f.type === "nn") return f.k > nnOrder.length ? ["Nearest neighbour: home", `Every spot visited; walk back to the mailbox. The greedy loop is ${T.nn_length.toFixed(1)} map-%.`]
+    : ["Nearest neighbour", `Leg ${f.k}: to the closest unvisited spot, a ${P[nnOrder[f.k - 1]].name}, ${T.nn[f.k - 1].leg.toFixed(1)} map-% away.`];
+  if (f.type === "show") return [`2-opt, swap ${f.n + 1} of ${T.swaps.length}`, `These two legs (red) can be swapped for two shorter ones (green): ${f.s.gain.toFixed(2)} map-% saved.`];
+  if (f.type === "apply") return [`2-opt, swap ${f.n + 1} of ${T.swaps.length}`, `Reversed the stretch between them. The loop is now ${f.s.length.toFixed(1)} map-%.`];
+  return ["Finished", `No swap helps any more. ${T.final_length.toFixed(1)} map-%, ${((1 - T.final_length / T.nn_length) * 100).toFixed(0)}% shorter than the greedy loop. The numbers are the order Wayfinder walks.`];
+}
+function show(n) {
+  i = Math.max(0, Math.min(frames.length - 1, n)); scrub.value = i;
+  const f = frames[i], [st, wh] = words(f);
+  document.getElementById("stage").textContent = st; document.getElementById("what").textContent = wh;
+  document.getElementById("s-step").textContent = `${i + 1} of ${frames.length}`;
+  document.getElementById("s-len").textContent = lengths[i] ? lengths[i].toFixed(1) + " map-%" : "-";
+  draw(f); drawLen(i);
+}
+function tick() { if (i >= frames.length - 1) return stop(); show(i + 1); timer = setTimeout(tick, (frames[i].type === "show" ? 900 : frames[i].type === "nn" ? 220 : 600) / speed); }
+function stop() { playing = false; clearTimeout(timer); document.getElementById("play").textContent = "Play"; }
+document.getElementById("play").onclick = () => { if (playing) return stop(); playing = true; document.getElementById("play").textContent = "Pause"; if (i >= frames.length - 1) show(0); tick(); };
+document.getElementById("back").onclick = () => { stop(); show(i - 1); };
+document.getElementById("fwd").onclick = () => { stop(); show(i + 1); };
+scrub.oninput = () => { stop(); show(+scrub.value); };
+const SPEEDS = [0.5, 1, 2, 4];
+document.getElementById("speed").onclick = e => { speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]; e.target.textContent = speed + "x"; };
+document.addEventListener("keydown", e => { if (e.key === "ArrowRight") document.getElementById("fwd").click(); if (e.key === "ArrowLeft") document.getElementById("back").click(); if (e.key === " ") { e.preventDefault(); document.getElementById("play").click(); } });
+
+const tip = document.getElementById("tip");
+cv.addEventListener("mousemove", e => {
+  const r = cv.getBoundingClientRect(), mx = (e.clientX - r.left) * W / r.width, my = (e.clientY - r.top) * Hh / r.height;
+  let best = null, bd = 30;
+  P.forEach((p, k) => { const d = Math.hypot(X(p) - mx, Y(p) - my); if (d < bd) { bd = d; best = k; } });
+  if (best === null) { tip.style.display = "none"; return; }
+  const p = P[best], f = frames[i], order = f.order || (f.type === "nn" ? nnOrder.slice(0, f.k) : []), at = order.indexOf(best);
+  tip.textContent = `${p.name} at ${p.x.toFixed(1)}, ${p.y.toFixed(1)} · ${p.source === "own" ? "your own pick" : "classic spawn"}${at >= 0 ? " · stop " + (at + 1) : ""}`;
+  tip.style.display = "block"; tip.style.left = e.clientX + 14 + "px"; tip.style.top = e.clientY + 14 + "px";
+});
+cv.addEventListener("mouseleave", () => tip.style.display = "none");
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => show(i));
+show(0);
+</script>
+</body>
+</html>
