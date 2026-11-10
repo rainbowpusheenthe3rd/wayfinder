@@ -7,8 +7,11 @@
 <style>
 :root{--bg:#f5f3ee;--card:#fffdf8;--ink:#1f2421;--muted:#5f6a63;--line:#d8d4c8;--grid:#e6e2d7;--route:#3d5a80;
   --cut:#c0392b;--new:#1e8449;--home:#7a4b2a;--chip:#ece8dd}
-@media (prefers-color-scheme:dark){:root{--bg:#121614;--card:#1b201d;--ink:#e8ece9;--muted:#9aa59e;--line:#2f3732;
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121614;--card:#1b201d;--ink:#e8ece9;--muted:#9aa59e;--line:#2f3732;
   --grid:#232a26;--route:#8fb3e0;--cut:#ff7b6b;--new:#5fd38d;--home:#e0b48a;--chip:#252c28}}
+:root[data-theme="dark"]{--bg:#121614;--card:#1b201d;--ink:#e8ece9;--muted:#9aa59e;--line:#2f3732;
+  --grid:#232a26;--route:#8fb3e0;--cut:#ff7b6b;--new:#5fd38d;--home:#e0b48a;--chip:#252c28}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}
 main{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
@@ -33,7 +36,8 @@ h2{font-size:1.05rem;margin:22px 0 6px}
 </head>
 <body>
 <main>
-<h1>Auberdine loop: how the route was found</h1>
+<div class="top"><h1>Auberdine loop: how the route was found</h1>
+<button id="theme" aria-label="Switch between light and dark">Dark</button></div>
 <p class="lead">Wayfinder's gathering loop out of Auberdine through Darkshore and back, worked out step by step: first the spots, then nearest neighbour builds a loop, then 2-opt uncrosses it until no swap helps.</p>
 <div class="wrap">
   <div class="card">
@@ -207,7 +211,19 @@ cv.addEventListener("mousemove", e => {
   tip.style.display = "block"; tip.style.left = e.clientX + 14 + "px"; tip.style.top = e.clientY + 14 + "px";
 });
 cv.addEventListener("mouseleave", () => tip.style.display = "none");
-matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => show(i));
+// light and dark: follows the system until you choose; the choice is remembered on this machine
+const themeBtn = document.getElementById("theme"), sysDark = matchMedia("(prefers-color-scheme: dark)");
+const isDark = () => (document.documentElement.dataset.theme || (sysDark.matches ? "dark" : "light")) === "dark";
+const label = () => { themeBtn.textContent = isDark() ? "Light" : "Dark"; };
+try { const t = localStorage.getItem("auberdine-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+themeBtn.onclick = () => {
+  const t = isDark() ? "light" : "dark";
+  document.documentElement.dataset.theme = t;
+  try { localStorage.setItem("auberdine-theme", t); } catch (e) {}
+  label(); show(i);
+};
+label();
+sysDark.addEventListener("change", () => { label(); show(i); });
 show(0);
 </script>
 </body>
