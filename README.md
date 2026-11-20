@@ -1,5 +1,9 @@
 # Wayfinder
 
+![The arrow turning towards the next waypoint, and the wisp that leads you](docs/arrow.png)
+
+![In game: the wisp ahead of you, with the next waypoint's name and distance under it](docs/ingame.png)
+
 ### Stop opening the map: a see-through arrow walks you round your route, one waypoint after another.
 
 ## What you get
@@ -72,3 +76,5 @@ New-Item -ItemType Junction -Path "<WoW folder>\_forever_\Interface\AddOns\Wayfi
 ```
 
 </details>
+
+<p align="center"><img src="docs/mint.png" alt="The wisp" width="140"></p>
